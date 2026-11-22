@@ -1,0 +1,209 @@
+{% extends "base.html" %}
+{% block title %}La Bàn Nghề — Xu hướng tuyển dụng cho sinh viên{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="eyebrow-line"></span> Sản phẩm đồng hành · Cầm lái AI</div>
+      <h1>Đọc thị trường tuyển dụng,<br><span class="accent">chọn đúng nhiệm vụ.</span></h1>
+      <p class="lede">Gom tin tuyển dụng công khai ở Việt Nam và thế giới, tách nghề khỏi kỹ năng, đọc phần mô tả và yêu cầu chi tiết, rồi trả lời một câu hỏi duy nhất: <strong>học gì tiếp theo?</strong></p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#xu-huong">Xem xu hướng</a>
+        <a class="btn btn-ghost" href="/vi-tri">Chọn theo vị trí</a>
+      </div>
+      <div class="hero-note">
+        <span class="dot"></span>
+        <span id="hero-updated">Đang tải lần cập nhật…</span>
+        <span class="sep">·</span>
+        <span>17 nguồn tuyển dụng + RSS cộng đồng</span>
+      </div>
+    </div>
+    <aside class="hero-card" aria-label="Tóm tắt dữ liệu">
+      <div class="hero-card-label">DỮ LIỆU ĐANG CHẠY</div>
+      <div class="hero-big"><span id="hero-jobs">—</span><small>tin trong <span id="hero-window">30</span> ngày</small></div>
+      <div class="hero-grid-mini">
+        <div><span id="hero-vn">—</span><small>tin Việt Nam</small></div>
+        <div><span id="hero-global">—</span><small>tin toàn cầu</small></div>
+        <div><span id="hero-skills">—</span><small>kỹ năng theo dõi</small></div>
+      </div>
+      <div class="hero-quote">“Nghề thay tên.<br>Nhiệm vụ đổi chậm hơn.”</div>
+      <div class="hero-card-foot">Phần 6 · Hướng đi &amp; việc làm</div>
+    </aside>
+  </div>
+</section>
+
+<section class="wrap controls-bar" id="xu-huong">
+  <div class="segmented" id="scope-toggle" role="group" aria-label="Phạm vi dữ liệu">
+    <button type="button" data-value="vn" class="active">Việt Nam</button>
+    <button type="button" data-value="global">Toàn cầu</button>
+  </div>
+  <label class="field-inline">
+    <span>Khoảng thời gian</span>
+    <select id="days-select">
+      <option value="7">7 ngày</option>
+      <option value="30" selected>30 ngày</option>
+      <option value="90">90 ngày</option>
+    </select>
+  </label>
+  <span class="control-note" id="window-note"></span>
+</section>
+
+<section class="wrap kpi-grid" id="kpi-grid" aria-live="polite"></section>
+
+<section class="wrap split-2">
+  <article class="panel panel-soft">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Tiêu chuẩn nghề</div>
+        <h2>Kỹ năng có bằng chứng trong mô tả</h2>
+      </div>
+      <span class="panel-note" id="detail-coverage-note">—</span>
+    </div>
+    <div id="top-standards" class="skill-bars"><div class="skeleton"></div></div>
+    <div class="panel-foot">
+      <a href="/vi-tri" class="text-link">Xem tiêu chuẩn từng vị trí →</a>
+      <span class="tiny-note">Chỉ tính khi kỹ năng xuất hiện trong thẻ, mô tả công việc hoặc yêu cầu ứng viên; tiêu đề chỉ là tín hiệu phụ.</span>
+    </div>
+  </article>
+
+  <article class="panel panel-warm">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Tín hiệu cộng đồng</div>
+        <h2>Người học đang bàn gì?</h2>
+      </div>
+      <a href="/tin-hieu-cong-dong" class="text-link small">Mở dashboard →</a>
+    </div>
+    <div id="social-teaser"><div class="skeleton short"></div></div>
+    <div class="panel-foot">
+      <span class="tiny-note" id="social-teaser-note">RSS công khai từ các diễn đàn học tập, CNTT, AI và ngoại ngữ; không lưu tên người đăng.</span>
+    </div>
+  </article>
+</section>
+
+<section class="wrap split-7-5">
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Tín hiệu chính</div>
+        <h2>Kỹ năng được hỏi nhiều nhất</h2>
+      </div>
+      <span class="panel-note" id="skills-note">—</span>
+    </div>
+    <div id="top-skills" class="skill-bars"><div class="skeleton"></div></div>
+    <div class="panel-foot">
+      <a href="/ky-nang" class="text-link">Mở toàn bộ kỹ năng →</a>
+    </div>
+  </article>
+
+  <div class="stack">
+    <article class="panel panel-warm">
+      <div class="panel-head">
+        <div>
+          <div class="eyebrow">Đang dịch chuyển</div>
+          <h2>Kỹ năng lên giá</h2>
+        </div>
+      </div>
+      <div id="rising-skills" class="rising-list"><div class="skeleton short"></div></div>
+    </article>
+
+    <article class="panel">
+      <div class="panel-head">
+        <div>
+          <div class="eyebrow">Nơi đang tuyển</div>
+          <h2>Doanh nghiệp nổi bật</h2>
+        </div>
+      </div>
+      <div id="top-companies" class="company-list"><div class="skeleton short"></div></div>
+    </article>
+  </div>
+</section>
+
+<section class="wrap split-7-5">
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Nhịp thị trường</div>
+        <h2>Tin tuyển dụng theo ngày</h2>
+      </div>
+      <span class="panel-note">Nguồn: tin có ngày đăng</span>
+    </div>
+    <div id="daily-chart" class="chart-box"><div class="skeleton"></div></div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Chọn theo nhiệm vụ</div>
+        <h2>Nhóm vị trí</h2>
+      </div>
+      <a href="/vi-tri" class="text-link small">Tất cả →</a>
+    </div>
+    <div id="role-list" class="role-mini-list"><div class="skeleton short"></div></div>
+  </article>
+</section>
+
+<section class="wrap split-2">
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Địa bàn</div>
+        <h2>Tỉnh/thành đang tuyển</h2>
+      </div>
+      <span class="panel-note" id="locations-note">—</span>
+    </div>
+    <div id="top-locations" class="skill-bars"><div class="skeleton"></div></div>
+    <div class="panel-foot">
+      <span class="tiny-note">Một tin có thể tuyển ở nhiều tỉnh/thành; tin không ghi địa điểm không được tính.</span>
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Cơ cấu doanh nghiệp</div>
+        <h2>Nhà nước, FDI và tư nhân</h2>
+      </div>
+      <span class="panel-note" id="company-types-note">—</span>
+    </div>
+    <div id="company-types" class="skill-bars"><div class="skeleton short"></div></div>
+    <div class="panel-foot">
+      <span class="tiny-note">Phân loại tham chiếu theo tên; tin qua trung gian tuyển dụng được tách riêng, không tính vào bảng doanh nghiệp nổi bật.</span>
+    </div>
+  </article>
+</section>
+
+<section class="wrap">
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Tin mới nhất</div>
+        <h2>Vài tin để đọc thử</h2>
+      </div>
+      <span class="panel-note">Bấm để mở tin gốc ở tab mới</span>
+    </div>
+    <div id="latest-jobs" class="job-list"><div class="skeleton"></div></div>
+  </article>
+</section>
+
+<section class="wrap">
+  <div class="method-band">
+    <div class="method-step">
+      <span class="method-num">01</span>
+      <h3>Đọc xu hướng</h3>
+      <p>Mỗi tuần mở một lần: nhóm nào tăng, kỹ năng nào lặp lại trong nhiều tin.</p>
+    </div>
+    <div class="method-step">
+      <span class="method-num">02</span>
+      <h3>Ghi kỹ năng</h3>
+      <p>Chọn 3 kỹ năng xuất hiện ở phần lớn tin bạn muốn ứng tuyển, không chọn theo cảm giác.</p>
+    </div>
+    <div class="method-step">
+      <span class="method-num">03</span>
+      <h3>Đối chiếu</h3>
+      <p>So với việc AI làm được ngay và việc con người giữ chắc, rồi chọn hướng A/B/C.</p>
+    </div>
+  </div>
+  <p class="tiny-note">Dữ liệu dùng để định hướng, không phải dự báo. Mỗi tin tuyển dụng chỉ là một quan sát; xu hướng cần đủ mẫu và nhiều tuần.</p>
+</section>
+{% endblock %}

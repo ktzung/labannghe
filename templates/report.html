@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}Báo cáo cho slide — La Bàn Nghề{% endblock %}
+{% block content %}
+<section class="wrap page-toolbar no-print">
+  <div>
+    <div class="eyebrow"><span class="eyebrow-line"></span> Xuất cho bài giảng</div>
+    <h1 class="small-title">Một trang để đưa vào slide</h1>
+  </div>
+  <div class="toolbar-actions">
+    <div class="segmented" id="scope-toggle">
+      <button type="button" data-value="vn" class="active">Việt Nam</button>
+      <button type="button" data-value="global">Toàn cầu</button>
+    </div>
+    <select id="days-select" class="plain-select">
+      <option value="30" selected>30 ngày</option>
+      <option value="90">90 ngày</option>
+      <option value="7">7 ngày</option>
+    </select>
+    <a class="btn btn-ghost" href="/sach-lat">Đọc dạng sách lật</a>
+    <button class="btn btn-primary" id="print-btn" type="button">In / Lưu PDF</button>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="slide-sheet" id="slide-sheet">
+    <div class="slide-top">
+      <div class="slide-kicker">PHẦN 6 · HƯỚNG ĐI &amp; VIỆC LÀM</div>
+      <div class="slide-brand">La Bàn Nghề</div>
+    </div>
+    <div class="slide-main">
+      <div class="slide-copy">
+        <h2 id="slide-title">Kỹ năng nhà tuyển dụng hỏi nhiều nhất</h2>
+        <p class="slide-sub" id="slide-sub">Đang tải dữ liệu…</p>
+        <div class="slide-kpis" id="slide-kpis"></div>
+        <div class="slide-reading" id="slide-reading"></div>
+      </div>
+      <div class="slide-chart">
+        <div class="slide-chart-title" id="slide-chart-title">Tỷ lệ tin có bằng chứng về kỹ năng</div>
+        <div id="slide-skills" class="slide-bars"><div class="skeleton"></div></div>
+      </div>
+    </div>
+    <div class="slide-bottom">
+      <div>
+        <div class="slide-label">Đang lên</div>
+        <div id="slide-rising" class="slide-chips"></div>
+      </div>
+      <div>
+        <div class="slide-label">Nhóm vị trí nhiều tin</div>
+        <div id="slide-roles" class="slide-roles"></div>
+      </div>
+      <div class="slide-source">
+        <div class="slide-label">Nguồn</div>
+        <p id="slide-source-text">17 nguồn tuyển dụng công khai, tin có ngày đăng trong khoảng thời gian đã chọn.</p>
+      </div>
+    </div>
+    <div class="slide-foot">
+      <span>TLU · Tập huấn sinh viên 2026</span>
+      <span id="slide-foot-meta">La Bàn Nghề</span>
+    </div>
+  </div>
+</section>
+
+<section class="wrap no-print">
+  <div class="info-strip">
+    <div>
+      <p><strong>Cách dùng:</strong> bấm “In / Lưu PDF”, chọn khổ giấy ngang, lề 0. Sau đó chèn ảnh/PDF vào slide hoặc dùng trực tiếp trong buổi học. Mọi số liệu đều kèm nguồn và thời điểm cập nhật.</p>
+    </div>
+    <a class="btn btn-ghost" href="/api/export?scope=vn&amp;days=30" target="_blank" rel="noopener">Tải dữ liệu JSON</a>
+  </div>
+</section>
+{% endblock %}

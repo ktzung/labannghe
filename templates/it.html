@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% block title %}CNTT: nhóm nghề &amp; yêu cầu năng lực — La Bàn Nghề{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="eyebrow-line"></span> Trọng tâm CNTT</div>
+    <h1>CNTT tuyển người để <span class="accent">làm gì, biết gì?</span></h1>
+    <p class="lede narrow">Tách bảy nhóm nghề CNTT, rồi đọc phần nội dung công việc, kiến thức nền và kỹ năng được nhắc tới trong chính tin tuyển dụng — không suy từ tên vị trí.</p>
+  </div>
+</section>
+
+<section class="wrap controls-bar">
+  <div class="segmented" id="scope-toggle" role="group" aria-label="Phạm vi dữ liệu">
+    <button type="button" data-value="vn" class="active">Việt Nam</button>
+    <button type="button" data-value="global">Toàn cầu</button>
+  </div>
+  <label class="field-inline">
+    <span>Thời gian</span>
+    <select id="days-select">
+      <option value="30" selected>30 ngày</option>
+      <option value="90">90 ngày</option>
+      <option value="7">7 ngày</option>
+    </select>
+  </label>
+  <span class="control-note" id="it-note">Đang tải…</span>
+</section>
+
+<section class="wrap kpi-grid" id="it-kpis" aria-live="polite">
+  <div class="skeleton card"></div><div class="skeleton card"></div>
+  <div class="skeleton card"></div><div class="skeleton card"></div>
+</section>
+
+<section class="wrap">
+  <div class="panel-head">
+    <div>
+      <div class="eyebrow">Bảy nhóm nghề</div>
+      <h2>Mỗi nhóm một chùm yêu cầu khác nhau</h2>
+    </div>
+    <span class="panel-note">Bấm thẻ để xem chi tiết vị trí</span>
+  </div>
+  <div class="role-grid" id="it-roles">
+    <div class="skeleton card"></div><div class="skeleton card"></div><div class="skeleton card"></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Ma trận kỹ năng</div>
+        <h2>Kỹ năng kỹ thuật nào xuất hiện ở nhóm nào?</h2>
+      </div>
+      <span class="panel-note">% tin trong từng nhóm có yêu cầu kỹ năng</span>
+    </div>
+    <div class="table-wrap">
+      <table class="data-table matrix-table" id="it-matrix">
+        <thead><tr><th>Kỹ năng</th><th>Nhóm</th></tr></thead>
+        <tbody><tr><td colspan="9"><div class="skeleton"></div></td></tr></tbody>
+      </table>
+    </div>
+    <div class="panel-foot">
+      <span class="tiny-note">Ô càng đậm là tỷ lệ tin yêu cầu càng cao. Chỉ tính bằng chứng mạnh trong thẻ, yêu cầu hoặc mô tả chi tiết; nhóm có ít tin sẽ được đánh dấu mỏng.</span>
+      <span class="matrix-hint">Vuốt ngang bảng để xem đủ cột</span>
+    </div>
+  </article>
+</section>
+
+<section class="wrap split-2">
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Nội dung công việc</div>
+        <h2>Tin CNTT mô tả những việc gì?</h2>
+      </div>
+    </div>
+    <div class="skill-bars" id="it-contents"><div class="skeleton"></div></div>
+    <div class="panel-foot">
+      <span class="tiny-note">Đọc theo cụm từ khoá trong mô tả và yêu cầu. Một tin có thể thuộc nhiều nhóm nội dung, nên tổng không bằng 100%.</span>
+    </div>
+  </article>
+
+  <article class="panel panel-soft">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Thành phần năng lực</div>
+        <h2>Kiến thức, công cụ và kỹ năng đi kèm</h2>
+      </div>
+    </div>
+    <div class="skill-bars" id="it-groups"><div class="skeleton"></div></div>
+    <div class="panel-foot">
+      <span class="tiny-note">Tỷ lệ tin CNTT có ít nhất một yêu cầu thuộc nhóm. Kỹ năng mềm và ngoại ngữ thường là điều kiện đi kèm, không thay cho kiến thức chuyên môn.</span>
+    </div>
+  </article>
+</section>
+
+<section class="wrap split-2">
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Mức kinh nghiệm</div>
+        <h2>Tin CNTT đang nhắm tới ai?</h2>
+      </div>
+    </div>
+    <div class="skill-bars" id="it-levels"><div class="skeleton"></div></div>
+    <div class="panel-foot">
+      <span class="tiny-note">Cấp bậc đọc từ tiêu đề và mô tả; nhiều tin không ghi rõ nên được xếp vào nhóm phổ thông.</span>
+    </div>
+  </article>
+
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Nơi tuyển</div>
+        <h2>Địa bàn và doanh nghiệp</h2>
+      </div>
+    </div>
+    <div class="split-2 inner-split">
+      <div>
+        <div class="mini-title">Thành phố</div>
+        <div class="company-list" id="it-cities"><div class="skeleton short"></div></div>
+      </div>
+      <div>
+        <div class="mini-title">Doanh nghiệp</div>
+        <div class="company-list" id="it-companies"><div class="skeleton short"></div></div>
+      </div>
+    </div>
+    <div class="panel-foot">
+      <span class="tiny-note">Không tính công ty môi giới tuyển dụng; tên doanh nghiệp giữ nguyên như tin đăng.</span>
+    </div>
+  </article>
+</section>
+
+<section class="wrap">
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Bằng chứng</div>
+        <h2>Yêu cầu được viết thế nào trong tin?</h2>
+      </div>
+      <a href="/ky-nang" class="text-link small">Xem toàn bộ kỹ năng →</a>
+    </div>
+    <div class="evidence-grid" id="it-evidence"><div class="skeleton"></div></div>
+    <div class="panel-foot">
+      <span class="tiny-note">Trích nguyên câu trong mô tả/yêu cầu của tin công khai, kèm liên kết về nguồn gốc.</span>
+    </div>
+  </article>
+</section>
+
+<section class="wrap">
+  <div class="info-strip">
+    <div>
+      <div class="eyebrow">Cách đọc</div>
+      <p><strong>Tỷ lệ mạnh</strong> chia cho số tin CNTT trong phạm vi, không phải số tin có mô tả. <strong>Nội dung công việc</strong> là tín hiệu từ khoá, chỉ nên dùng để so sánh tương đối. Nhóm Mobile hiện ít tin, các chỉ số chỉ mang tính tham khảo.</p>
+    </div>
+    <a class="btn btn-ghost" href="/nguon">Xem phương pháp &amp; nguồn</a>
+  </div>
+</section>
+{% endblock %}

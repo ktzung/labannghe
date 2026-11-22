@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="La Bàn Nghề — nền tảng phân tích xu hướng tuyển dụng và kỹ năng cho sinh viên, đồng hành cùng buổi Cầm lái AI.">
+  <title>{% block title %}La Bàn Nghề{% endblock %}</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/app.css?v=20261121f">
+</head>
+<body data-page="{{ page }}">
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="/" aria-label="La Bàn Nghề — trang chủ">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="34" height="34">
+            <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M20 7 L24 20 L20 33 L16 20 Z" fill="currentColor" opacity=".18"/>
+            <path d="M20 7 L24 20 L20 28 L16 20 Z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="20" cy="20" r="2.4" fill="#B42318"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>La Bàn Nghề</strong>
+          <small>Dữ liệu tuyển dụng cho sinh viên</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="/" class="{{ 'active' if page == 'overview' else '' }}">Tổng quan</a>
+        <a href="/ky-nang" class="{{ 'active' if page == 'skills' else '' }}">Kỹ năng</a>
+        <a href="/vi-tri" class="{{ 'active' if page == 'roles' else '' }}">Vị trí</a>
+        <a href="/cntt" class="{{ 'active' if page == 'it' else '' }}">CNTT</a>
+        <a href="/tin-hieu-cong-dong" class="{{ 'active' if page == 'social' else '' }}">Cộng đồng</a>
+        <a href="/nguon" class="{{ 'active' if page == 'sources' else '' }}">Nguồn &amp; phương pháp</a>
+        <a href="/bao-cao" class="{{ 'active' if page == 'report' else '' }}">Báo cáo</a>
+        <a href="/sach-lat" class="{{ 'active' if page == 'flipbook' else '' }}">Sách lật</a>
+        <a href="/case-study-cv" class="{{ 'active' if page == 'case_study_cv' else '' }}">Case Study CV (TLU)</a>
+      </nav>
+      <div class="topbar-flag">
+        <span class="pulse" aria-hidden="true"></span>
+        <span>Cập nhật hằng ngày</span>
+      </div>
+    </div>
+    <div class="tricolor" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="footer-brand">La Bàn Nghề</div>
+        <p>Sản phẩm đồng hành với buổi tập huấn <em>Cầm lái AI</em> — Phần 6: Hướng đi &amp; việc làm.<br>
+        Dữ liệu công khai, chỉ dùng cho mục đích học tập và hướng nghiệp.</p>
+      </div>
+      <div>
+        <div class="footer-title">Liên kết</div>
+        <a href="/cntt">Phân tích CNTT</a>
+        <a href="/nguon">Nguồn dữ liệu &amp; đạo đức</a>
+        <a href="/sach-lat">Đọc dạng sách lật</a>
+        <a href="/bao-cao">Báo cáo cho slide</a>
+        <a href="/api/export?scope=vn&amp;days=30">Tải JSON</a>
+      </div>
+      <div>
+        <div class="footer-title">Ghi công</div>
+        <p>Dữ liệu thuộc về từng trang tuyển dụng. Mỗi tin đều có liên kết về nguồn gốc.</p>
+        <p class="muted">Không thu thập thông tin cá nhân, không đăng lại toàn văn tin tuyển dụng.</p>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <span>TLU · Tập huấn sinh viên 2026</span>
+      <span>La Bàn Nghề v0.1 · <span id="footer-updated">đang tải…</span></span>
+    </div>
+  </footer>
+
+  <dialog id="drawer" class="drawer" aria-labelledby="drawer-title">
+    <div class="drawer-head">
+      <div>
+        <div class="eyebrow" id="drawer-eyebrow">Chi tiết</div>
+        <h2 id="drawer-title">Đang tải…</h2>
+      </div>
+      <button class="icon-btn" id="drawer-close" aria-label="Đóng">×</button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+  </dialog>
+
+  <script src="/static/app.js?v=20261121f" defer></script>
+</body>
+</html>

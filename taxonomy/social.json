@@ -1,0 +1,192 @@
+{
+  "topics": [
+    {
+      "id": "tuyen_dung",
+      "label": "Tuyển dụng & tìm việc",
+      "aliases": [
+        "tuyen dung", "tim viec", "viec lam", "ung tuyen", "phong van",
+        "interview", "cv", "intern", "fresher", "offer", "nghe nghiep",
+        "co hoi lam viec"
+      ]
+    },
+    {
+      "id": "it",
+      "label": "CNTT & kỹ thuật",
+      "aliases": [
+        "cntt", "lap trinh", "dev", "software", "backend", "frontend",
+        "fullstack", "embedded", "vi mach", "attt", "an toan thong tin",
+        "devops", "cloud", "leetcode", "automotive", "semiconductor",
+        "firmware", "ui ux", "data engineer"
+      ],
+      "raw_patterns": ["\\bIT\\b"]
+    },
+    {
+      "id": "ai",
+      "label": "AI & công cụ AI",
+      "aliases": [
+        "claude", "chatgpt", "deepseek", "vibe code", "llm",
+        "machine learning", "tri tue nhan tao", "agent", "mo hinh ngon ngu",
+        "ai workflow", "ai tao anh", "ai giong noi"
+      ],
+      "raw_patterns": ["\\bAI\\b", "\\bGenAI\\b"]
+    },
+    {
+      "id": "ngoai_ngu",
+      "label": "Ngoại ngữ & chứng chỉ",
+      "aliases": [
+        "ngoai ngu", "tieng anh", "ielts", "toeic", "tieng nhat", "jlpt",
+        "tieng duc", "tieng trung", "hsk", "tieng han", "topik",
+        "n5", "n4", "n3", "n2", "n1"
+      ]
+    },
+    {
+      "id": "luong_thuong",
+      "label": "Lương & đãi ngộ",
+      "aliases": [
+        "luong", "thu nhap", "gross", "net", "thuong luong", "tien thuong",
+        "thuong tet", "bonus", "dai ngo", "offer"
+      ]
+    },
+    {
+      "id": "hoc_tap",
+      "label": "Học tập & chứng chỉ",
+      "aliases": [
+        "hoc thac si", "thac si", "du hoc", "xuat ngoai", "hoc bong",
+        "khoa hoc", "trung tam", "tu hoc", "on thi", "chung chi", "luyen thi"
+      ]
+    },
+    {
+      "id": "moi_truong_lam_viec",
+      "label": "Môi trường làm việc",
+      "aliases": [
+        "bhxh", "bao hiem", "hop dong", "hdld", "luat lao dong", "nghi phep",
+        "tang ca", "ot", "van hoa", "dong nghiep", "sep", "toxic", "noi bo"
+      ]
+    },
+    {
+      "id": "nghe_tay",
+      "label": "Việc làm thêm & tự do",
+      "aliases": [
+        "freelance", "part-time", "part time", "lam them", "ctv",
+        "kinh doanh", "ban hang", "lam online", "viec online",
+        "ban hang online", "online tai nha", "thu nhap thu dong"
+      ]
+    },
+    {
+      "id": "chuyen_huong",
+      "label": "Chuyển ngành & định hướng",
+      "aliases": [
+        "chuyen nganh", "re nhanh", "trai nganh", "huong di moi",
+        "mat dinh huong", "van bang 2", "chon ui ux", "chon nghe", "nen hoc gi"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "that_nghiep",
+      "label": "Thất nghiệp / khó tìm việc",
+      "aliases": [
+        "that nghiep", "tim viec kho", "khong tim duoc viec", "rai cv",
+        "khong co viec", "bi cho nghi", "mat viec", "cho nghi"
+      ]
+    },
+    {
+      "id": "layoff",
+      "label": "Layoff & cắt giảm",
+      "aliases": [
+        "layoff", "sa thai", "cat giam", "tinh giam", "mua dong", "giai the"
+      ]
+    },
+    {
+      "id": "luong_thap",
+      "label": "Áp lực lương & thu nhập",
+      "aliases": [
+        "luong thap", "thu nhap thap", "khong du song", "luong khong",
+        "bong luong", "luong bat on"
+      ]
+    },
+    {
+      "id": "phong_van",
+      "label": "Phỏng vấn & bài test",
+      "aliases": [
+        "phong van", "interview", "vong culture", "bai test", "leetcode",
+        "fail", "cho ket qua", "ket qua phong van", "bi rot"
+      ]
+    },
+    {
+      "id": "hr_ghosting",
+      "label": "HR im lặng / tuyển dụng ảo",
+      "aliases": [
+        "ghost", "khong phan hoi", "im lang", "bomb", "fake so nam kinh nghiem",
+        "tuyen dung ao", "khong thay phan hoi", "cho mai"
+      ]
+    },
+    {
+      "id": "ai_thay_the",
+      "label": "AI thay thế việc làm",
+      "aliases": [
+        "ai thay the", "thay the dev", "mat viec vi ai", "dev ra chuong ga",
+        "van de cua vibe code", "lo vibe code", "vibe code loi",
+        "phu thuoc ai", "ai lam het"
+      ]
+    },
+    {
+      "id": "rao_can_ngoai_ngu",
+      "label": "Rào cản ngoại ngữ",
+      "aliases": [
+        "bi ngop", "mat goc", "khong noi", "nghe kem", "tu vung", "phat am",
+        "writing", "speaking", "di phong van tieng anh", "word-by-word",
+        "hoc mai khong vao"
+      ]
+    },
+    {
+      "id": "mat_dinh_huong",
+      "label": "Mất định hướng / chuyển ngành",
+      "aliases": [
+        "chuyen nganh tu it", "muon chuyen nganh", "re nhanh", "trai nganh",
+        "huong di moi", "khong biet lam gi", "nen hoc gi",
+        "chon ui ux hay it", "chon nghe"
+      ]
+    },
+    {
+      "id": "moi_truong",
+      "label": "Môi trường & văn hoá làm việc",
+      "aliases": [
+        "toxic", "sep", "dong nghiep", "tang ca", "ot", "van hoa",
+        "bao luc", "noi bo", "review cong ty"
+      ]
+    },
+    {
+      "id": "quyen_loi",
+      "label": "Hợp đồng, BHXH, quyền lợi",
+      "aliases": [
+        "bhxh", "bao hiem", "hop dong", "hdld", "luat lao dong",
+        "dong trung", "quyen loi", "nghi phep"
+      ]
+    },
+    {
+      "id": "rui_ro_ai",
+      "label": "Rủi ro AI & an toàn",
+      "aliases": [
+        "hack", "bao mat he thong", "an toan thong tin", "lo hong bao mat",
+        "rui ro", "lua dao", "that thoat du lieu", "phu thuoc ai", "ai gia"
+      ]
+    },
+    {
+      "id": "chi_phi_hoc",
+      "label": "Chi phí học & chứng chỉ",
+      "aliases": [
+        "hoc phi", "chi phi khoa hoc", "hoc phi cao", "qua dat", "khong dang"
+      ]
+    },
+    {
+      "id": "lua_dao",
+      "label": "Dấu hiệu lừa đảo",
+      "aliases": [
+        "lua dao", "da cap", "tuyen dung ao", "dong phi",
+        "phi tham gia", "dat coc", "khong luong", "ctv ban hang",
+        "thu nhap thu dong"
+      ]
+    }
+  ]
+}

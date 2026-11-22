@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Vị trí &amp; lộ trình 90 ngày — La Bàn Nghề{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="eyebrow-line"></span> Chọn theo nhiệm vụ</div>
+    <h1>Chọn vị trí, rồi chọn <span class="accent">bằng chứng.</span></h1>
+    <p class="lede narrow">Mỗi vị trí là một chùm nhiệm vụ. Bảng dưới cho biết kỹ năng nào lặp lại nhiều nhất, mức lương tham khảo và ba sản phẩm tối thiểu để bắt đầu.</p>
+  </div>
+</section>
+
+<section class="wrap controls-bar">
+  <div class="segmented" id="scope-toggle" role="group" aria-label="Phạm vi dữ liệu">
+    <button type="button" data-value="vn" class="active">Việt Nam</button>
+    <button type="button" data-value="global">Toàn cầu</button>
+  </div>
+  <label class="field-inline">
+    <span>Thời gian</span>
+    <select id="days-select">
+      <option value="30" selected>30 ngày</option>
+      <option value="90">90 ngày</option>
+      <option value="7">7 ngày</option>
+    </select>
+  </label>
+  <span class="control-note" id="roles-note"></span>
+</section>
+
+<section class="wrap">
+  <div class="role-grid" id="role-grid">
+    <div class="skeleton card"></div><div class="skeleton card"></div><div class="skeleton card"></div>
+    <div class="skeleton card"></div><div class="skeleton card"></div><div class="skeleton card"></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="callout-navy">
+    <div>
+      <div class="eyebrow light">Nguyên tắc</div>
+      <h2>Đừng chọn nghề theo tên. Chọn theo việc còn lại cho con người.</h2>
+    </div>
+    <p>Mỗi thẻ vị trí mở ra một bản đọc: kỹ năng lặp lại, cấp bậc, nơi tuyển, doanh nghiệp và ba sản phẩm 90 ngày. Dùng nó để đối chiếu với khung sáu tầng và ba hướng đi trong buổi học.</p>
+  </div>
+</section>
+{% endblock %}

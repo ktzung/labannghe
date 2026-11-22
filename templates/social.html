@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block title %}Tín hiệu cộng đồng — La Bàn Nghề{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="eyebrow-line"></span> Tín hiệu cộng đồng</div>
+    <h1>Người học đang <span class="accent">hỏi gì</span> trước khi chọn nghề?</h1>
+    <p class="lede narrow">Theo dõi chủ đề nổi bật trên các diễn đàn công khai về tuyển dụng, CNTT, AI và ngoại ngữ. Phần này chỉ đọc <strong>tiêu đề và đoạn trích RSS</strong>, tách tin tuyển dụng khỏi thảo luận và không lưu tên người đăng.</p>
+  </div>
+</section>
+
+<section class="wrap controls-bar">
+  <div class="segmented" id="social-forum" role="group" aria-label="Diễn đàn">
+    <button type="button" data-value="all" class="active">Tất cả</button>
+    <button type="button" data-value="95">Tuyển dụng</button>
+    <button type="button" data-value="91">CNTT</button>
+    <button type="button" data-value="42">AI</button>
+    <button type="button" data-value="90">Ngoại ngữ</button>
+  </div>
+  <label class="field-inline">
+    <span>Thời gian</span>
+    <select id="social-days">
+      <option value="7">7 ngày</option>
+      <option value="30" selected>30 ngày</option>
+      <option value="90">90 ngày</option>
+    </select>
+  </label>
+  <span class="control-note" id="social-mode"></span>
+</section>
+
+<section class="wrap">
+  <div class="kpi-grid" id="social-kpis">
+    <div class="kpi-card"><div class="kpi-label">Chủ đề</div><div class="kpi-value skeleton">&nbsp;</div></div>
+    <div class="kpi-card"><div class="kpi-label">Thảo luận</div><div class="kpi-value skeleton">&nbsp;</div></div>
+    <div class="kpi-card"><div class="kpi-label">Lượt phản hồi</div><div class="kpi-value skeleton">&nbsp;</div></div>
+    <div class="kpi-card"><div class="kpi-label">Tin tuyển dụng</div><div class="kpi-value skeleton">&nbsp;</div></div>
+  </div>
+</section>
+
+<section class="wrap split-2">
+  <article class="panel">
+    <header class="panel-head">
+      <div>
+        <div class="eyebrow">Chủ đề</div>
+        <h2>Sự quan tâm theo chủ đề</h2>
+      </div>
+    </header>
+    <div class="skill-bars social-bars" id="social-topics"><div class="skeleton"></div></div>
+    <div class="panel-foot"><span class="tiny-note">Một chủ đề có thể gắn nhiều nhãn; tỷ lệ tính trên tổng số chủ đề trong phạm vi.</span></div>
+  </article>
+  <article class="panel">
+    <header class="panel-head">
+      <div>
+        <div class="eyebrow">Vấn đề</div>
+        <h2>Nỗi lo lặp lại</h2>
+      </div>
+    </header>
+    <div class="skill-bars social-bars" id="social-issues"><div class="skeleton"></div></div>
+    <div class="panel-foot"><span class="tiny-note">Nhãn vấn đề chỉ là tín hiệu từ tiêu đề/đoạn trích, không phải chẩn đoán tâm lý hay kết luận về cá nhân.</span></div>
+  </article>
+</section>
+
+<section class="wrap">
+  <article class="panel table-panel">
+    <header class="panel-head">
+      <div>
+        <div class="eyebrow">Kỹ năng</div>
+        <h2>Cộng đồng nhắc gì, thị trường cần gì?</h2>
+      </div>
+      <span class="tiny-note">So sánh tỷ lệ chủ đề có nhắc kỹ năng với tỷ lệ tin tuyển dụng cần kỹ năng đó.</span>
+    </header>
+    <div class="table-wrap">
+      <table class="data-table" id="social-skills">
+        <thead>
+          <tr>
+            <th>Kỹ năng</th>
+            <th>Nhóm</th>
+            <th class="num">Chủ đề</th>
+            <th class="num">Tỷ lệ cộng đồng</th>
+            <th class="num">Tỷ lệ tin tuyển dụng</th>
+            <th class="num">Khoảng cách</th>
+          </tr>
+        </thead>
+        <tbody><tr><td colspan="6"><div class="skeleton"></div></td></tr></tbody>
+      </table>
+    </div>
+    <div class="panel-foot"><span class="tiny-note">Khoảng cách dương: cộng đồng quan tâm nhiều hơn mức xuất hiện trong tin tuyển dụng. Khoảng cách âm: kỹ năng được nhà tuyển dụng nhắc nhiều hơn thảo luận công khai.</span></div>
+  </article>
+</section>
+
+<section class="wrap split-2">
+  <article class="panel">
+    <header class="panel-head">
+      <div>
+        <div class="eyebrow">Nổi bật</div>
+        <h2>Chủ đề được bàn nhiều</h2>
+      </div>
+    </header>
+    <div class="job-list" id="social-threads"><div class="skeleton"></div></div>
+  </article>
+  <article class="panel">
+    <header class="panel-head">
+      <div>
+        <div class="eyebrow">Nhịp độ</div>
+        <h2>Hoạt động theo ngày</h2>
+      </div>
+    </header>
+    <div class="chart-box" id="social-chart"></div>
+    <div class="panel-foot"><span class="tiny-note">Số chủ đề mới ghi nhận mỗi ngày từ RSS. RSS chỉ trả tối đa 20 chủ đề mới nhất mỗi diễn đàn, nên đây là mẫu đại diện, không phải toàn bộ lịch sử.</span></div>
+  </article>
+</section>
+
+<section class="wrap">
+  <div class="info-strip">
+    <div>
+      <div class="eyebrow">Cách đọc &amp; giới hạn</div>
+      <p>Dữ liệu lấy từ RSS công khai của bốn diễn đàn Voz. Hệ thống chỉ lưu tiêu đề, liên kết, thời điểm, số phản hồi/lượt xem và đoạn trích tối đa 700 ký tự. Tên tác giả được băm một chiều; không thu thập bình luận đầy đủ. Vì vậy, đây là <strong>tín hiệu tham khảo</strong>, không phải khảo sát đại diện cho toàn bộ người học.</p>
+    </div>
+    <a class="btn btn-ghost" href="/nguon">Xem nguồn &amp; đạo đức</a>
+  </div>
+</section>
+{% endblock %}

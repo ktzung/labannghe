@@ -1,0 +1,1669 @@
+{
+  "groups": {
+    "programming": "Lập trình",
+    "data": "Dữ liệu & AI",
+    "web": "Web & Mobile",
+    "cloud": "Cloud & DevOps",
+    "tools": "Công cụ & quy trình",
+    "design": "Thiết kế & sáng tạo",
+    "engineering": "Kỹ thuật & xây dựng",
+    "business": "Kinh doanh & tài chính",
+    "soft": "Kỹ năng mềm",
+    "language": "Ngoại ngữ"
+  },
+  "skills": [
+    {
+      "id": "python",
+      "label": "Python",
+      "group": "programming",
+      "aliases": [
+        "python",
+        "python3",
+        "lập trình python",
+        "lap trinh python"
+      ]
+    },
+    {
+      "id": "java",
+      "label": "Java",
+      "group": "programming",
+      "aliases": [
+        "java"
+      ],
+      "patterns": [
+        "(?<![a-z0-9])java(?!script)(?![a-z0-9])"
+      ]
+    },
+    {
+      "id": "javascript",
+      "label": "JavaScript",
+      "group": "programming",
+      "aliases": [
+        "javascript",
+        "js",
+        "es6",
+        "ecmascript"
+      ]
+    },
+    {
+      "id": "typescript",
+      "label": "TypeScript",
+      "group": "programming",
+      "aliases": [
+        "typescript"
+      ]
+    },
+    {
+      "id": "cpp",
+      "label": "C/C++",
+      "group": "programming",
+      "aliases": [
+        "c++",
+        "cpp",
+        "c plus plus",
+        "lập trình c"
+      ]
+    },
+    {
+      "id": "csharp",
+      "label": "C#",
+      "group": "programming",
+      "aliases": [
+        "c#",
+        "c sharp",
+        "csharp"
+      ]
+    },
+    {
+      "id": "dotnet",
+      "label": ".NET",
+      "group": "programming",
+      "aliases": [
+        ".net",
+        "dotnet",
+        "asp.net",
+        "entity framework"
+      ]
+    },
+    {
+      "id": "php",
+      "label": "PHP",
+      "group": "programming",
+      "aliases": [
+        "php"
+      ]
+    },
+    {
+      "id": "golang",
+      "label": "Go",
+      "group": "programming",
+      "aliases": [
+        "golang",
+        "go language",
+        "ngôn ngữ go"
+      ]
+    },
+    {
+      "id": "rust",
+      "label": "Rust",
+      "group": "programming",
+      "aliases": [
+        "rust",
+        "rust lang"
+      ]
+    },
+    {
+      "id": "kotlin",
+      "label": "Kotlin",
+      "group": "programming",
+      "aliases": [
+        "kotlin"
+      ]
+    },
+    {
+      "id": "swift",
+      "label": "Swift",
+      "group": "programming",
+      "aliases": [
+        "swift",
+        "swiftui"
+      ]
+    },
+    {
+      "id": "sql",
+      "label": "SQL",
+      "group": "programming",
+      "aliases": [
+        "sql",
+        "mysql",
+        "postgresql",
+        "postgres",
+        "sql server",
+        "oracle sql",
+        "t-sql",
+        "pl/sql"
+      ]
+    },
+    {
+      "id": "r_lang",
+      "label": "R",
+      "group": "programming",
+      "aliases": [
+        "r language",
+        "ngôn ngữ r",
+        "rstudio",
+        "lập trình r"
+      ]
+    },
+    {
+      "id": "matlab",
+      "label": "MATLAB",
+      "group": "programming",
+      "aliases": [
+        "matlab",
+        "simulink"
+      ]
+    },
+    {
+      "id": "vba",
+      "label": "VBA / Macro",
+      "group": "programming",
+      "aliases": [
+        "vba",
+        "macro excel",
+        "excel macro"
+      ]
+    },
+    {
+      "id": "bash",
+      "label": "Shell / Bash",
+      "group": "programming",
+      "aliases": [
+        "bash",
+        "shell script",
+        "powershell",
+        "command line"
+      ]
+    },
+    {
+      "id": "html_css",
+      "label": "HTML/CSS",
+      "group": "web",
+      "aliases": [
+        "html",
+        "css",
+        "html5",
+        "css3",
+        "sass",
+        "tailwind"
+      ]
+    },
+    {
+      "id": "excel",
+      "label": "Excel nâng cao",
+      "group": "data",
+      "aliases": [
+        "excel",
+        "bảng tính",
+        "spreadsheet",
+        "pivot table",
+        "pivot",
+        "google sheets"
+      ]
+    },
+    {
+      "id": "power_bi",
+      "label": "Power BI",
+      "group": "data",
+      "aliases": [
+        "power bi",
+        "powerbi",
+        "dax"
+      ]
+    },
+    {
+      "id": "tableau",
+      "label": "Tableau",
+      "group": "data",
+      "aliases": [
+        "tableau"
+      ]
+    },
+    {
+      "id": "pandas",
+      "label": "pandas",
+      "group": "data",
+      "aliases": [
+        "pandas"
+      ]
+    },
+    {
+      "id": "numpy",
+      "label": "NumPy",
+      "group": "data",
+      "aliases": [
+        "numpy"
+      ]
+    },
+    {
+      "id": "spark",
+      "label": "Spark",
+      "group": "data",
+      "aliases": [
+        "spark",
+        "pyspark",
+        "apache spark"
+      ]
+    },
+    {
+      "id": "airflow",
+      "label": "Airflow",
+      "group": "data",
+      "aliases": [
+        "airflow",
+        "apache airflow",
+        "dbt"
+      ]
+    },
+    {
+      "id": "etl",
+      "label": "ETL / Data pipeline",
+      "group": "data",
+      "aliases": [
+        "etl",
+        "elt",
+        "data pipeline",
+        "đường ống dữ liệu",
+        "data warehouse",
+        "kho dữ liệu"
+      ]
+    },
+    {
+      "id": "data_modeling",
+      "label": "Mô hình dữ liệu",
+      "group": "data",
+      "aliases": [
+        "data modeling",
+        "data model",
+        "mô hình dữ liệu",
+        "thiết kế dữ liệu"
+      ]
+    },
+    {
+      "id": "statistics",
+      "label": "Thống kê",
+      "group": "data",
+      "aliases": [
+        "statistics",
+        "thống kê",
+        "xác suất",
+        "probability",
+        "a/b testing",
+        "hypothesis testing"
+      ]
+    },
+    {
+      "id": "ml",
+      "label": "Machine Learning",
+      "group": "data",
+      "aliases": [
+        "machine learning",
+        "học máy",
+        "ml",
+        "scikit",
+        "xgboost",
+        "random forest"
+      ]
+    },
+    {
+      "id": "deep_learning",
+      "label": "Deep Learning",
+      "group": "data",
+      "aliases": [
+        "deep learning",
+        "học sâu",
+        "neural network",
+        "mạng nơ ron",
+        "mạng nơ-ron"
+      ]
+    },
+    {
+      "id": "nlp",
+      "label": "NLP",
+      "group": "data",
+      "aliases": [
+        "nlp",
+        "xử lý ngôn ngữ tự nhiên",
+        "natural language processing",
+        "spacy",
+        "hugging face"
+      ]
+    },
+    {
+      "id": "computer_vision",
+      "label": "Computer Vision",
+      "group": "data",
+      "aliases": [
+        "computer vision",
+        "thị giác máy tính",
+        "opencv",
+        "image processing"
+      ]
+    },
+    {
+      "id": "llm",
+      "label": "LLM & GenAI",
+      "group": "data",
+      "aliases": [
+        "llm",
+        "large language model",
+        "genai",
+        "generative ai",
+        "mô hình ngôn ngữ lớn",
+        "ai tạo sinh"
+      ]
+    },
+    {
+      "id": "prompt",
+      "label": "Prompt engineering",
+      "group": "data",
+      "aliases": [
+        "prompt engineering",
+        "prompt",
+        "viết prompt",
+        "kỹ thuật prompt",
+        "prompt design"
+      ]
+    },
+    {
+      "id": "rag",
+      "label": "RAG / Vector DB",
+      "group": "data",
+      "aliases": [
+        "rag",
+        "retrieval augmented generation",
+        "vector database",
+        "vector db",
+        "embedding",
+        "pinecone",
+        "faiss"
+      ]
+    },
+    {
+      "id": "tensorflow",
+      "label": "TensorFlow",
+      "group": "data",
+      "aliases": [
+        "tensorflow",
+        "keras"
+      ]
+    },
+    {
+      "id": "pytorch",
+      "label": "PyTorch",
+      "group": "data",
+      "aliases": [
+        "pytorch"
+      ]
+    },
+    {
+      "id": "data_viz",
+      "label": "Trực quan hoá dữ liệu",
+      "group": "data",
+      "aliases": [
+        "data visualization",
+        "trực quan hóa dữ liệu",
+        "trực quan hoá dữ liệu",
+        "dashboard",
+        "báo cáo dữ liệu",
+        "data storytelling"
+      ]
+    },
+    {
+      "id": "ai_tools",
+      "label": "Công cụ AI",
+      "group": "data",
+      "aliases": [
+        "chatgpt",
+        "copilot",
+        "github copilot",
+        "gemini",
+        "claude",
+        "cursor",
+        "midjourney",
+        "ai tool",
+        "công cụ ai"
+      ]
+    },
+    {
+      "id": "automation",
+      "label": "Tự động hoá",
+      "group": "data",
+      "aliases": [
+        "automation",
+        "tự động hóa",
+        "tự động hoá",
+        "rpa",
+        "power automate",
+        "n8n",
+        "zapier",
+        "make.com"
+      ]
+    },
+    {
+      "id": "big_data",
+      "label": "Big Data",
+      "group": "data",
+      "aliases": [
+        "big data",
+        "hadoop",
+        "hive",
+        "databricks",
+        "snowflake",
+        "data lake"
+      ]
+    },
+    {
+      "id": "bi",
+      "label": "Business Intelligence",
+      "group": "data",
+      "aliases": [
+        "business intelligence",
+        "bi analyst",
+        "bi developer",
+        "báo cáo quản trị"
+      ]
+    },
+    {
+      "id": "react",
+      "label": "React",
+      "group": "web",
+      "aliases": [
+        "react",
+        "reactjs",
+        "react.js",
+        "next.js",
+        "nextjs"
+      ]
+    },
+    {
+      "id": "vue",
+      "label": "Vue",
+      "group": "web",
+      "aliases": [
+        "vue",
+        "vuejs",
+        "nuxt"
+      ]
+    },
+    {
+      "id": "angular",
+      "label": "Angular",
+      "group": "web",
+      "aliases": [
+        "angular"
+      ]
+    },
+    {
+      "id": "nodejs",
+      "label": "Node.js",
+      "group": "web",
+      "aliases": [
+        "node.js",
+        "nodejs",
+        "node js",
+        "express.js",
+        "nestjs"
+      ]
+    },
+    {
+      "id": "spring",
+      "label": "Spring Boot",
+      "group": "web",
+      "aliases": [
+        "spring boot",
+        "spring"
+      ]
+    },
+    {
+      "id": "django",
+      "label": "Django",
+      "group": "web",
+      "aliases": [
+        "django",
+        "flask"
+      ]
+    },
+    {
+      "id": "fastapi",
+      "label": "FastAPI",
+      "group": "web",
+      "aliases": [
+        "fastapi"
+      ]
+    },
+    {
+      "id": "laravel",
+      "label": "Laravel",
+      "group": "web",
+      "aliases": [
+        "laravel"
+      ]
+    },
+    {
+      "id": "rest_api",
+      "label": "REST API",
+      "group": "web",
+      "aliases": [
+        "rest api",
+        "restful",
+        "api",
+        "web service",
+        "microservices",
+        "graphql"
+      ]
+    },
+    {
+      "id": "flutter",
+      "label": "Flutter",
+      "group": "web",
+      "aliases": [
+        "flutter",
+        "dart"
+      ]
+    },
+    {
+      "id": "react_native",
+      "label": "React Native",
+      "group": "web",
+      "aliases": [
+        "react native"
+      ]
+    },
+    {
+      "id": "android",
+      "label": "Android",
+      "group": "web",
+      "aliases": [
+        "android",
+        "jetpack compose"
+      ]
+    },
+    {
+      "id": "ios",
+      "label": "iOS",
+      "group": "web",
+      "aliases": [
+        "ios",
+        "swiftui",
+        "objective-c"
+      ]
+    },
+    {
+      "id": "wordpress",
+      "label": "WordPress",
+      "group": "web",
+      "aliases": [
+        "wordpress",
+        "woocommerce"
+      ]
+    },
+    {
+      "id": "shopify",
+      "label": "Shopify",
+      "group": "web",
+      "aliases": [
+        "shopify",
+        "liquid"
+      ]
+    },
+    {
+      "id": "git",
+      "label": "Git",
+      "group": "cloud",
+      "aliases": [
+        "git",
+        "github",
+        "gitlab",
+        "bitbucket",
+        "version control"
+      ]
+    },
+    {
+      "id": "docker",
+      "label": "Docker",
+      "group": "cloud",
+      "aliases": [
+        "docker",
+        "container",
+        "docker compose"
+      ]
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "group": "cloud",
+      "aliases": [
+        "kubernetes",
+        "k8s",
+        "helm"
+      ]
+    },
+    {
+      "id": "aws",
+      "label": "AWS",
+      "group": "cloud",
+      "aliases": [
+        "aws",
+        "amazon web services",
+        "ec2",
+        "s3",
+        "lambda"
+      ]
+    },
+    {
+      "id": "azure",
+      "label": "Azure",
+      "group": "cloud",
+      "aliases": [
+        "azure",
+        "microsoft azure"
+      ]
+    },
+    {
+      "id": "gcp",
+      "label": "GCP",
+      "group": "cloud",
+      "aliases": [
+        "gcp",
+        "google cloud",
+        "bigquery"
+      ]
+    },
+    {
+      "id": "cicd",
+      "label": "CI/CD",
+      "group": "cloud",
+      "aliases": [
+        "ci/cd",
+        "cicd",
+        "jenkins",
+        "github actions",
+        "gitlab ci"
+      ]
+    },
+    {
+      "id": "linux",
+      "label": "Linux",
+      "group": "cloud",
+      "aliases": [
+        "linux",
+        "ubuntu",
+        "centos",
+        "unix"
+      ]
+    },
+    {
+      "id": "terraform",
+      "label": "Terraform",
+      "group": "cloud",
+      "aliases": [
+        "terraform",
+        "ansible",
+        "infrastructure as code",
+        "iac"
+      ]
+    },
+    {
+      "id": "networking",
+      "label": "Mạng máy tính",
+      "group": "cloud",
+      "aliases": [
+        "networking",
+        "mạng máy tính",
+        "tcp/ip",
+        "ccna",
+        "router",
+        "switch",
+        "vpn"
+      ]
+    },
+    {
+      "id": "security",
+      "label": "An ninh mạng",
+      "group": "cloud",
+      "aliases": [
+        "cybersecurity",
+        "an ninh mạng",
+        "an toàn thông tin",
+        "bảo mật thông tin",
+        "bảo mật hệ thống",
+        "bảo mật dữ liệu",
+        "information security",
+        "security engineer",
+        "security analyst",
+        "devsecops",
+        "pentest",
+        "owasp",
+        "soc",
+        "iso 27001"
+      ]
+    },
+    {
+      "id": "selenium",
+      "label": "Automation Test",
+      "group": "cloud",
+      "aliases": [
+        "selenium",
+        "playwright",
+        "cypress",
+        "appium",
+        "automation test"
+      ]
+    },
+    {
+      "id": "project_mgmt",
+      "label": "Quản lý dự án",
+      "group": "tools",
+      "aliases": [
+        "quản lý dự án",
+        "project management",
+        "agile",
+        "scrum",
+        "kanban",
+        "jira"
+      ]
+    },
+    {
+      "id": "figma",
+      "label": "Figma",
+      "group": "design",
+      "aliases": [
+        "figma"
+      ]
+    },
+    {
+      "id": "photoshop",
+      "label": "Photoshop",
+      "group": "design",
+      "aliases": [
+        "photoshop",
+        "adobe photoshop"
+      ]
+    },
+    {
+      "id": "illustrator",
+      "label": "Illustrator",
+      "group": "design",
+      "aliases": [
+        "illustrator",
+        "adobe illustrator"
+      ]
+    },
+    {
+      "id": "uiux",
+      "label": "UI/UX",
+      "group": "design",
+      "aliases": [
+        "ui/ux",
+        "ui ux",
+        "ux/ui",
+        "ux design",
+        "ui design",
+        "thiết kế giao diện",
+        "trải nghiệm người dùng"
+      ]
+    },
+    {
+      "id": "video_editing",
+      "label": "Dựng video",
+      "group": "design",
+      "aliases": [
+        "premiere",
+        "capcut",
+        "after effects",
+        "dựng phim",
+        "dựng video",
+        "video editing",
+        "final cut"
+      ]
+    },
+    {
+      "id": "autocad",
+      "label": "AutoCAD",
+      "group": "design",
+      "aliases": [
+        "autocad",
+        "cad"
+      ]
+    },
+    {
+      "id": "revit",
+      "label": "Revit",
+      "group": "design",
+      "aliases": [
+        "revit",
+        "bim",
+        "navisworks"
+      ]
+    },
+    {
+      "id": "gis",
+      "label": "GIS / ArcGIS",
+      "group": "design",
+      "aliases": [
+        "gis",
+        "arcgis",
+        "qgis",
+        "bản đồ số",
+        "viễn thám",
+        "remote sensing"
+      ]
+    },
+    {
+      "id": "sketchup",
+      "label": "SketchUp / 3ds Max",
+      "group": "design",
+      "aliases": [
+        "sketchup",
+        "3ds max",
+        "3d max",
+        "lumion",
+        "v-ray"
+      ]
+    },
+    {
+      "id": "canva",
+      "label": "Canva",
+      "group": "design",
+      "aliases": [
+        "canva"
+      ]
+    },
+    {
+      "id": "content_creation",
+      "label": "Sáng tạo nội dung",
+      "group": "design",
+      "aliases": [
+        "content",
+        "viết content",
+        "sáng tạo nội dung",
+        "copywriting",
+        "biên tập",
+        "content creator"
+      ]
+    },
+    {
+      "id": "plc",
+      "label": "PLC",
+      "group": "engineering",
+      "aliases": [
+        "plc",
+        "siemens s7",
+        "allen bradley",
+        "tia portal",
+        "lập trình plc"
+      ]
+    },
+    {
+      "id": "scada",
+      "label": "SCADA",
+      "group": "engineering",
+      "aliases": [
+        "scada",
+        "hmi",
+        "wincc",
+        "industrial automation"
+      ]
+    },
+    {
+      "id": "solidworks",
+      "label": "SolidWorks",
+      "group": "engineering",
+      "aliases": [
+        "solidworks",
+        "inventor",
+        "creo",
+        "catia"
+      ]
+    },
+    {
+      "id": "hecras",
+      "label": "HEC-RAS",
+      "group": "engineering",
+      "aliases": [
+        "hec-ras",
+        "hecras",
+        "hec hms",
+        "hec-hms"
+      ]
+    },
+    {
+      "id": "mike",
+      "label": "MIKE / Thuỷ lực",
+      "group": "engineering",
+      "aliases": [
+        "mike 11",
+        "mike 21",
+        "mike urban",
+        "thủy lực",
+        "thuỷ lực",
+        "hydraulic",
+        "hydrology",
+        "thủy văn"
+      ]
+    },
+    {
+      "id": "epanet",
+      "label": "EPANET / SWMM",
+      "group": "engineering",
+      "aliases": [
+        "epanet",
+        "swmm",
+        "cấp thoát nước",
+        "water supply"
+      ]
+    },
+    {
+      "id": "surveying",
+      "label": "Trắc địa",
+      "group": "engineering",
+      "aliases": [
+        "trắc địa",
+        "surveying",
+        "toàn đạc",
+        "gps rtk",
+        "đo đạc"
+      ]
+    },
+    {
+      "id": "construction_mgmt",
+      "label": "Quản lý thi công",
+      "group": "engineering",
+      "aliases": [
+        "giám sát thi công",
+        "quản lý thi công",
+        "site engineer",
+        "construction management",
+        "chỉ huy trưởng"
+      ]
+    },
+    {
+      "id": "quantity_surveying",
+      "label": "Dự toán / QS",
+      "group": "engineering",
+      "aliases": [
+        "dự toán",
+        "bóc tách khối lượng",
+        "quantity surveying",
+        "qs",
+        "thanh quyết toán"
+      ]
+    },
+    {
+      "id": "iso",
+      "label": "ISO / QMS",
+      "group": "engineering",
+      "aliases": [
+        "iso 9001",
+        "iso 14001",
+        "iso 45001",
+        "qms",
+        "quản lý chất lượng"
+      ]
+    },
+    {
+      "id": "ohs",
+      "label": "An toàn lao động",
+      "group": "engineering",
+      "aliases": [
+        "an toàn lao động",
+        "hse",
+        "ohs",
+        "an toàn vệ sinh"
+      ]
+    },
+    {
+      "id": "water_treatment",
+      "label": "Xử lý nước",
+      "group": "engineering",
+      "aliases": [
+        "xử lý nước",
+        "xử lý nước thải",
+        "wastewater",
+        "water treatment",
+        "cấp nước"
+      ]
+    },
+    {
+      "id": "environment",
+      "label": "Môi trường / EIA",
+      "group": "engineering",
+      "kind": "knowledge",
+      "aliases": [
+        "đánh giá tác động môi trường",
+        "eia",
+        "quan trắc môi trường",
+        "environmental",
+        "chất thải",
+        "waste management"
+      ]
+    },
+    {
+      "id": "irrigation",
+      "label": "Thuỷ lợi",
+      "group": "engineering",
+      "kind": "knowledge",
+      "aliases": [
+        "thủy lợi",
+        "thuỷ lợi",
+        "irrigation",
+        "đê điều",
+        "công trình thủy"
+      ]
+    },
+    {
+      "id": "structural",
+      "label": "Kết cấu",
+      "group": "engineering",
+      "kind": "knowledge",
+      "aliases": [
+        "kết cấu",
+        "structural",
+        "sap2000",
+        "etabs",
+        "safe",
+        "midas"
+      ]
+    },
+    {
+      "id": "geotech",
+      "label": "Địa kỹ thuật",
+      "group": "engineering",
+      "kind": "knowledge",
+      "aliases": [
+        "địa chất công trình",
+        "địa kỹ thuật",
+        "geotech",
+        "plaxis",
+        "móng cọc"
+      ]
+    },
+    {
+      "id": "mechanical",
+      "label": "Cơ khí",
+      "group": "engineering",
+      "kind": "knowledge",
+      "aliases": [
+        "cơ khí",
+        "mechanical",
+        "cnc",
+        "cad/cam",
+        "gia công"
+      ]
+    },
+    {
+      "id": "electrical",
+      "label": "Điện - Điện tử",
+      "group": "engineering",
+      "kind": "knowledge",
+      "aliases": [
+        "điện công nghiệp",
+        "điện tử",
+        "electrical",
+        "electronic",
+        "vi điều khiển",
+        "arduino",
+        "stm32"
+      ]
+    },
+    {
+      "id": "hvac",
+      "label": "HVAC / Điều hoà",
+      "group": "engineering",
+      "aliases": [
+        "hvac",
+        "điều hòa",
+        "điều hoà",
+        "thông gió",
+        "m&e",
+        "cơ điện"
+      ]
+    },
+    {
+      "id": "seo",
+      "label": "SEO",
+      "group": "business",
+      "aliases": [
+        "seo",
+        "search engine optimization",
+        "google search console",
+        "ahrefs",
+        "semrush"
+      ]
+    },
+    {
+      "id": "google_ads",
+      "label": "Google Ads",
+      "group": "business",
+      "aliases": [
+        "google ads",
+        "adwords",
+        "quảng cáo google",
+        "google analytics",
+        "ga4"
+      ]
+    },
+    {
+      "id": "facebook_ads",
+      "label": "Facebook / TikTok Ads",
+      "group": "business",
+      "aliases": [
+        "facebook ads",
+        "meta ads",
+        "tiktok ads",
+        "quảng cáo facebook"
+      ]
+    },
+    {
+      "id": "brand",
+      "label": "Thương hiệu",
+      "group": "business",
+      "aliases": [
+        "brand",
+        "thương hiệu",
+        "branding",
+        "pr",
+        "public relations"
+      ]
+    },
+    {
+      "id": "crm",
+      "label": "CRM",
+      "group": "business",
+      "aliases": [
+        "crm",
+        "salesforce",
+        "hubspot",
+        "quản lý khách hàng"
+      ]
+    },
+    {
+      "id": "financial_analysis",
+      "label": "Phân tích tài chính",
+      "group": "business",
+      "aliases": [
+        "phân tích tài chính",
+        "financial analysis",
+        "tài chính",
+        "finance",
+        "mô hình tài chính",
+        "financial modeling"
+      ]
+    },
+    {
+      "id": "tax",
+      "label": "Thuế",
+      "group": "business",
+      "aliases": [
+        "thuế",
+        "tax",
+        "kê khai thuế",
+        "hóa đơn điện tử"
+      ]
+    },
+    {
+      "id": "payroll",
+      "label": "Tiền lương / C&B",
+      "group": "business",
+      "aliases": [
+        "tiền lương",
+        "payroll",
+        "c&b",
+        "compensation",
+        "bảo hiểm xã hội"
+      ]
+    },
+    {
+      "id": "import_export",
+      "label": "Xuất nhập khẩu",
+      "group": "business",
+      "aliases": [
+        "xuất nhập khẩu",
+        "import export",
+        "hải quan",
+        "customs",
+        "incoterms"
+      ]
+    },
+    {
+      "id": "communication",
+      "label": "Giao tiếp",
+      "group": "soft",
+      "aliases": [
+        "giao tiếp",
+        "communication",
+        "kỹ năng giao tiếp",
+        "thuyết trình",
+        "presentation"
+      ]
+    },
+    {
+      "id": "teamwork",
+      "label": "Làm việc nhóm",
+      "group": "soft",
+      "aliases": [
+        "làm việc nhóm",
+        "teamwork",
+        "team work",
+        "phối hợp",
+        "collaboration"
+      ]
+    },
+    {
+      "id": "problem_solving",
+      "label": "Giải quyết vấn đề",
+      "group": "soft",
+      "aliases": [
+        "giải quyết vấn đề",
+        "problem solving",
+        "tư duy phản biện",
+        "critical thinking",
+        "phân tích vấn đề"
+      ]
+    },
+    {
+      "id": "time_management",
+      "label": "Quản lý thời gian",
+      "group": "soft",
+      "aliases": [
+        "quản lý thời gian",
+        "time management",
+        "tổ chức công việc",
+        "self management"
+      ]
+    },
+    {
+      "id": "adaptability",
+      "label": "Thích ứng & học nhanh",
+      "group": "soft",
+      "aliases": [
+        "thích ứng",
+        "adaptability",
+        "học nhanh",
+        "fast learner",
+        "linh hoạt",
+        "chịu áp lực"
+      ]
+    },
+    {
+      "id": "leadership",
+      "label": "Lãnh đạo",
+      "group": "soft",
+      "aliases": [
+        "lãnh đạo",
+        "leadership",
+        "quản lý đội nhóm",
+        "team lead",
+        "mentoring"
+      ]
+    },
+    {
+      "id": "negotiation",
+      "label": "Đàm phán",
+      "group": "soft",
+      "aliases": [
+        "đàm phán",
+        "negotiation",
+        "thương lượng",
+        "thuyết phục"
+      ]
+    },
+    {
+      "id": "creativity",
+      "label": "Sáng tạo",
+      "group": "soft",
+      "aliases": [
+        "sáng tạo",
+        "creativity",
+        "tư duy sáng tạo",
+        "innovation"
+      ]
+    },
+    {
+      "id": "attention",
+      "label": "Tỉ mỉ / Chi tiết",
+      "group": "soft",
+      "aliases": [
+        "tỉ mỉ",
+        "chi tiết",
+        "attention to detail",
+        "cẩn thận",
+        "chính xác"
+      ]
+    },
+    {
+      "id": "ownership",
+      "label": "Trách nhiệm",
+      "group": "soft",
+      "aliases": [
+        "trách nhiệm",
+        "ownership",
+        "tự chủ",
+        "chủ động",
+        "cam kết"
+      ]
+    },
+    {
+      "id": "english",
+      "label": "Tiếng Anh",
+      "group": "language",
+      "aliases": [
+        "tiếng anh",
+        "english",
+        "ielts",
+        "toeic",
+        "toefl",
+        "giao tiếp tiếng anh"
+      ]
+    },
+    {
+      "id": "japanese",
+      "label": "Tiếng Nhật",
+      "group": "language",
+      "aliases": [
+        "tiếng nhật",
+        "japanese",
+        "jlpt",
+        "n2",
+        "n3",
+        "n1"
+      ]
+    },
+    {
+      "id": "chinese",
+      "label": "Tiếng Trung",
+      "group": "language",
+      "aliases": [
+        "tiếng trung",
+        "chinese",
+        "mandarin",
+        "hsk"
+      ]
+    },
+    {
+      "id": "korean",
+      "label": "Tiếng Hàn",
+      "group": "language",
+      "aliases": [
+        "tiếng hàn",
+        "korean",
+        "topik"
+      ]
+    },
+    {
+      "id": "bookkeeping",
+      "label": "Hạch toán / ghi sổ",
+      "group": "business",
+      "aliases": [
+        "hạch toán",
+        "ghi sổ",
+        "sổ sách kế toán",
+        "nhật ký chung",
+        "đối chiếu công nợ",
+        "bookkeeping"
+      ]
+    },
+    {
+      "id": "financial_reporting",
+      "label": "Báo cáo tài chính",
+      "group": "business",
+      "aliases": [
+        "báo cáo tài chính",
+        "lập báo cáo tài chính",
+        "vnr",
+        "ifrs",
+        "báo cáo quản trị"
+      ]
+    },
+    {
+      "id": "credit_analysis",
+      "label": "Thẩm định tín dụng",
+      "group": "business",
+      "aliases": [
+        "thẩm định tín dụng",
+        "phân tích tín dụng",
+        "credit analysis",
+        "xếp hạng tín dụng"
+      ]
+    },
+    {
+      "id": "internal_control",
+      "label": "Kiểm soát nội bộ",
+      "group": "business",
+      "aliases": [
+        "kiểm soát nội bộ",
+        "internal control",
+        "quản trị rủi ro",
+        "risk management"
+      ]
+    },
+    {
+      "id": "audit_procedures",
+      "label": "Thủ tục kiểm toán",
+      "group": "business",
+      "aliases": [
+        "thủ tục kiểm toán",
+        "audit procedures",
+        "soát xét",
+        "kiểm toán nội bộ"
+      ]
+    },
+    {
+      "id": "banking_operations",
+      "label": "Nghiệp vụ ngân hàng",
+      "group": "business",
+      "aliases": [
+        "nghiệp vụ ngân hàng",
+        "banking operations",
+        "thanh toán quốc tế",
+        "swift"
+      ]
+    },
+    {
+      "id": "labor_law",
+      "label": "Luật lao động",
+      "group": "business",
+      "aliases": [
+        "luật lao động",
+        "bộ luật lao động",
+        "labor law",
+        "bhxh"
+      ]
+    },
+    {
+      "id": "talent_sourcing",
+      "label": "Tìm nguồn ứng viên",
+      "group": "business",
+      "aliases": [
+        "tìm nguồn ứng viên",
+        "talent sourcing",
+        "đăng tuyển",
+        "employer branding"
+      ]
+    },
+    {
+      "id": "interviewing",
+      "label": "Phỏng vấn / đánh giá ứng viên",
+      "group": "business",
+      "aliases": [
+        "phỏng vấn ứng viên",
+        "đánh giá ứng viên",
+        "interviewing",
+        "structured interview"
+      ]
+    },
+    {
+      "id": "complaint_handling",
+      "label": "Xử lý khiếu nại",
+      "group": "business",
+      "aliases": [
+        "xử lý khiếu nại",
+        "xử lý phàn nàn",
+        "complaint handling",
+        "giải quyết khiếu nại"
+      ]
+    },
+    {
+      "id": "warehouse_management",
+      "label": "Quản lý kho / WMS",
+      "group": "business",
+      "aliases": [
+        "quản lý kho",
+        "kho vận",
+        "wms",
+        "warehouse management",
+        "kiểm kê"
+      ]
+    },
+    {
+      "id": "transport_planning",
+      "label": "Điều vận / vận tải",
+      "group": "business",
+      "aliases": [
+        "điều vận",
+        "lập kế hoạch vận tải",
+        "transport planning",
+        "dispatch"
+      ]
+    },
+    {
+      "id": "procurement",
+      "label": "Mua hàng / đấu thầu",
+      "group": "business",
+      "aliases": [
+        "mua hàng",
+        "đấu thầu",
+        "procurement",
+        "purchasing"
+      ]
+    },
+    {
+      "id": "inventory_management",
+      "label": "Quản lý tồn kho",
+      "group": "business",
+      "aliases": [
+        "quản lý tồn kho",
+        "tồn kho",
+        "inventory management",
+        "inventory control"
+      ]
+    },
+    {
+      "id": "ecommerce_ops",
+      "label": "Vận hành sàn TMĐT",
+      "group": "business",
+      "aliases": [
+        "vận hành sàn",
+        "quản lý sàn",
+        "shopee",
+        "lazada",
+        "tiktok shop",
+        "ecommerce operations"
+      ]
+    },
+    {
+      "id": "performance_marketing",
+      "label": "Performance Marketing",
+      "group": "business",
+      "aliases": [
+        "performance marketing",
+        "chạy ads",
+        "quảng cáo chuyển đổi",
+        "roas",
+        "cpa"
+      ]
+    },
+    {
+      "id": "marketing_analytics",
+      "label": "Đo lường marketing",
+      "group": "business",
+      "aliases": [
+        "marketing analytics",
+        "đo lường chiến dịch",
+        "attribution",
+        "phân tích chiến dịch"
+      ]
+    },
+    {
+      "id": "product_discovery",
+      "label": "Khám phá sản phẩm",
+      "group": "tools",
+      "aliases": [
+        "product discovery",
+        "khám phá sản phẩm",
+        "user research",
+        "nghiên cứu người dùng"
+      ]
+    },
+    {
+      "id": "roadmapping",
+      "label": "Roadmap sản phẩm",
+      "group": "tools",
+      "aliases": [
+        "roadmap",
+        "lộ trình sản phẩm",
+        "product roadmap"
+      ]
+    },
+    {
+      "id": "requirements_analysis",
+      "label": "Phân tích yêu cầu",
+      "group": "tools",
+      "aliases": [
+        "phân tích yêu cầu",
+        "đặc tả yêu cầu",
+        "user story",
+        "requirements analysis",
+        "viết tài liệu yêu cầu"
+      ]
+    },
+    {
+      "id": "test_planning",
+      "label": "Thiết kế kiểm thử",
+      "group": "cloud",
+      "aliases": [
+        "test case",
+        "thiết kế test case",
+        "kiểm thử chức năng",
+        "manual test",
+        "kiểm thử phần mềm",
+        "test plan"
+      ]
+    },
+    {
+      "id": "data_analysis",
+      "label": "Phân tích dữ liệu",
+      "group": "data",
+      "aliases": [
+        "phân tích dữ liệu",
+        "phân tích số liệu",
+        "data analysis",
+        "analytics",
+        "insight",
+        "phân tích kinh doanh"
+      ]
+    },
+    {
+      "id": "devops_practices",
+      "label": "DevOps / SRE",
+      "group": "cloud",
+      "aliases": [
+        "devops",
+        "sre",
+        "site reliability",
+        "observability"
+      ]
+    }
+  ]
+}

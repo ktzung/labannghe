@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Cao Thiêm — Middle iOS Developer | Web Portfolio & Case Study "Cầm Lái AI"</title>
+  <meta name="description" content="Web Portfolio và Case Study nâng cấp CV thời đại AI của Nguyễn Cao Thiêm (Cựu SV Tốt nghiệp Xuất sắc ĐH Thủy Lợi, ThS VNU-UET, Kỹ sư Mobile VNPT Technology).">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- Top Banner: Dẫn chứng từ bài giảng Cầm Lái AI TLU -->
+  <aside class="tlu-banner" aria-label="Thông báo liên kết bài giảng">
+    <div class="container tlu-banner-inner">
+      <span class="tlu-pill">TLU 2026 · CẦM LÁI AI</span>
+      <span>Đồng hành cùng <strong>173 bạn sinh viên ĐH Thủy Lợi</strong> · Minh họa thực tế cho <strong>Slide 73 (Portfolio 90 ngày) &amp; Slide 74 (CV thời AI)</strong></span>
+      <a href="#caseStudyAi" class="btn btn-sm btn-outline" style="border-color: rgba(255,255,255,0.6); color:#fff;">Xem Case Study Giảng Dạy &darr;</a>
+    </div>
+  </aside>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="#" class="brand">
+        <span class="brand-badge">iOS &middot; IoT &middot; AI</span>
+        <div class="brand-title">
+          <span>Nguyễn Cao Thiêm</span>
+          <span style="font-size: 13px; font-weight: normal; color: var(--text-dim);">/ Portfolio Web</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Điều hướng chính">
+        <a href="#soSanhCv" class="active">So Sánh CV (Before/After)</a>
+        <a href="#duAnThucChien">Dự Án Thực Chiến</a>
+        <a href="#caseStudyAi">Minh Hoạ "Cầm Lái AI"</a>
+        <a href="#ideSimulator">Mô Phỏng IDE (Slide 44)</a>
+        <a href="#atsSimulator">Bộ Lọc Tuyển Dụng</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" title="Chuyển chế độ Sáng / Tối" aria-label="Chuyển giao diện sáng tối">☀️</button>
+        <a href="#duAnThucChien" class="btn btn-primary btn-sm">Xem Dự Án</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-avatar-box">
+          <div class="avatar-frame">
+            <img src="assets/thiem_avatar.png" alt="Chân dung Nguyễn Cao Thiêm" class="avatar-img">
+          </div>
+          <div class="avatar-badge-status">
+            <span class="status-dot"></span>
+            <span>Đang công tác tại VNPT Technology</span>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <div class="badge-group">
+            <span class="badge-tag gold">🎓 Cựu SV Xuất sắc ĐH Thủy Lợi (GPA 3.63/4.0)</span>
+            <span class="badge-tag highlight">🏛️ Học viên ThS KTPM ĐH Công nghệ (VNU-UET)</span>
+            <span class="badge-tag">⚡ 3+ Năm Kinh Nghiệm Mobile (iOS/Flutter)</span>
+            <span class="badge-tag highlight">🤖 AI-Assisted Software Engineer</span>
+          </div>
+
+          <h1 class="hero-name">Nguyễn Cao Thiêm</h1>
+          <div class="hero-role">Middle iOS / Mobile Software Engineer</div>
+
+          <p class="hero-pitch">
+            Chuyên gia phát triển ứng dụng di động tập trung vào <strong>hệ thống IoT phần cứng thông minh (Camera an ninh RTSP, BLE, Zigbee, MQTT)</strong> và <strong>video streaming độ trễ thấp</strong>. Đã tối ưu hóa hiệu năng ứng dụng cho hơn <strong>1.5 triệu thiết bị ONEHome (VNPT Technology)</strong>. Tiên phong áp dụng quy trình <em>AI Coding Agent có kiểm chứng 3 lớp</em> để nâng cao 60% năng suất kỹ thuật phần mềm.
+          </p>
+
+          <div class="hero-meta-row">
+            <div class="hero-meta-item">
+              <span>📍 Hà Nội, Việt Nam</span>
+            </div>
+            <div class="hero-meta-item">
+              <span>🔒 Thông tin liên hệ đã được ẩn trong bản công khai</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stat Strip -->
+      <div class="container">
+        <div class="stat-strip">
+          <div class="stat-card">
+            <div class="stat-num blue">3.63 / 4.0</div>
+            <div class="stat-label">Tốt nghiệp Xuất sắc ĐH Thủy Lợi (TLU K60)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num emerald">60+ TV</div>
+            <div class="stat-label">Quy mô team dự án IoT ONEHome VNPT</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num amber">-35% Latency</div>
+            <div class="stat-label">Tối ưu độ trễ luồng Camera RTSP &amp; Memory Leaks</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num purple">96 / 100</div>
+            <div class="stat-label">Điểm ATS Chuẩn Tuyển Dụng Thời Đại AI</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: SO SÁNH ĐỐI CHIẾU BEFORE / AFTER (CV TRUYỀN THỐNG VS CV THỜI AI) -->
+    <section id="soSanhCv" class="section">
+      <div class="container">
+        <span class="section-tag">Đối chiếu phương pháp luận · Slide 74</span>
+        <h2 class="section-title">Chuyển Đổi CV: Từ Giấy PDF Tĩnh Sang Chuẩn "Cầm Lái AI"</h2>
+        <p class="section-desc">
+          Nhà tuyển dụng thời AI mở link kiểm chứng, không đọc lời hứa. Dưới đây là đối chiếu trực quan giữa <strong>Bản PDF cũ (TopCV 2021)</strong> và <strong>Bản nâng cấp Web Portfolio (Chuẩn Cầm Lái AI 2026)</strong> của anh Nguyễn Cao Thiêm.
+        </p>
+
+        <!-- View Mode Switcher -->
+        <div class="view-control-bar">
+          <div style="font-size: 14px; font-weight: 600;">
+            Chế độ hiển thị:
+          </div>
+          <div class="view-modes">
+            <button class="mode-btn active" data-mode="split">
+              <span>⚖️</span> So Sánh Song Song
+            </button>
+            <button class="mode-btn" data-mode="new">
+              <span>🚀</span> Bản Nâng Cấp Chuẩn AI
+            </button>
+            <button class="mode-btn" data-mode="old">
+              <span>📄</span> Bản Gốc PDF Truyền Thống
+            </button>
+          </div>
+        </div>
+
+        <!-- Comparison Grid -->
+        <div id="splitView" class="comparison-grid">
+          <!-- Cột CV Cũ -->
+          <div id="oldCvCol" class="cv-col">
+            <div class="cv-col-header col-old-header">
+              <div>
+                <strong style="color: #ef4444;">BẢN GỐC PDF (TRUYỀN THỐNG)</strong>
+                <div style="font-size: 12px; color: var(--text-dim);">Trích từ file [Middle iOS Developer][Nguyen Cao Thiem].pdf</div>
+              </div>
+              <span class="badge-tag" style="background: rgba(220, 38, 38, 0.15); color: #f87171;">Điểm ATS: 62/100</span>
+            </div>
+
+            <div class="cv-col-body">
+              <!-- Item 1: Summary -->
+              <div>
+                <h4 style="font-size: 14px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 8px;">1. Phần mở đầu &amp; Kỹ năng</h4>
+                <div class="critique-box warning">
+                  <span>⚠️</span>
+                  <div>
+                    <strong>Chỉ liệt kê gạch đầu dòng khô khan, không có số đo:</strong><br>
+                    <em>"- Over 3 years of experience in mobile programming... Includes iOS, Android and Flutter.<br>
+                    - Experience working with security cameras, smart home devices, networking devices."</em>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: ONEHome -->
+              <div>
+                <h4 style="font-size: 14px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 8px;">2. Kinh nghiệm tại VNPT Technology (ONEHome)</h4>
+                <div class="critique-box warning">
+                  <span>⚠️</span>
+                  <div>
+                    <strong>Mô tả nhiệm vụ trách nhiệm chung chung (giống Job Description):</strong><br>
+                    <em>"- Develop and implement software solutions based on client requirements<br>
+                    - Develop bunch of feature for Smart Devices (Camera, Gateway, Plug...)<br>
+                    - Fix bugs, upgrade and maintain software<br>
+                    - Team management, work management..."</em><br>
+                    <small style="color: #ef4444;">&rarr; Thiếu: Kết quả đo được là gì? Giảm bao nhiêu % crash? Hiệu năng ra sao?</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: Personal Project -->
+              <div>
+                <h4 style="font-size: 14px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 8px;">3. Dự án cá nhân (Personal Projects)</h4>
+                <div class="critique-box warning">
+                  <span>⚠️</span>
+                  <div>
+                    <strong>Viết lời hứa suông (Vi phạm quy tắc cấm kỵ ở Slide 74):</strong><br>
+                    <em>"Description: I always try my best to achieve my goals.<br>
+                    1. VN Lottery &middot; 2. MollterT &middot; 3. Newspapers online"</em><br>
+                    <small style="color: #ef4444;">&rarr; "Ai cũng viết được lời hứa, nhà tuyển dụng cần xem thứ mở ra được!" (Slide 74)</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4: AI Literacy -->
+              <div>
+                <h4 style="font-size: 14px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 8px;">4. Năng lực sử dụng AI (AI Literacy)</h4>
+                <div class="critique-box warning">
+                  <span>⚠️</span>
+                  <div>
+                    <strong>Hoàn toàn không đề cập đến AI:</strong><br>
+                    Không nhắc đến Coding Agent, Unit test generation, hoặc on-device AI. Dễ bị xếp vào nhóm lập trình viên có nguy cơ bị tụt hậu năng suất khi công nghệ thay đổi (Slide 12: -20% cửa vào cho người làm việc lặp lại).
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột CV Mới -->
+          <div id="newCvCol" class="cv-col">
+            <div class="cv-col-header col-new-header">
+              <div>
+                <strong style="color: #60a5fa;">BẢN NÂNG CẤP (CHUẨN CẦM LÁI AI 2026)</strong>
+                <div style="font-size: 12px; color: var(--text-dim);">Áp dụng triết lý Slide 73 (3 lớp Portfolio) &amp; Slide 74 (Số đo + Bằng chứng)</div>
+              </div>
+              <span class="badge-tag" style="background: rgba(37, 99, 235, 0.2); color: #93c5fd;">Điểm ATS: 96/100</span>
+            </div>
+
+            <div class="cv-col-body">
+              <!-- Item 1: Summary -->
+              <div>
+                <h4 style="font-size: 14px; text-transform: uppercase; color: #60a5fa; margin-bottom: 8px;">1. Câu mở đầu định lượng (Mở đầu 1 dòng chuẩn Slide 74)</h4>
+                <div class="critique-box success">
+                  <span>✅</span>
+                  <div>
+                    <strong>Mở đầu gắn số đo trước - sau và chịu trách nhiệm:</strong><br>
+                    <em>"Kỹ sư iOS chuyên sâu IoT &amp; Video Streaming độ trễ thấp; đã tối ưu hóa hệ thống ONEHome VNPT cho 1.5M+ thiết bị, <strong>giảm 35% độ trễ RTSP camera và giảm 45% tiêu thụ RAM</strong>; tăng 65% độ phủ unit test nhờ quy trình Coding Agent có kiểm chứng 3 lớp."</em>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: ONEHome -->
+              <div>
+                <h4 style="font-size: 14px; text-transform: uppercase; color: #60a5fa; margin-bottom: 8px;">2. Kinh nghiệm thực chiến có số đo &amp; sơ đồ kiến trúc</h4>
+                <div class="critique-box success">
+                  <span>✅</span>
+                  <div>
+                    <strong>Cấu trúc Bối cảnh &rarr; Thách thức &rarr; Giải pháp &rarr; Số liệu đo được:</strong><br>
+                    &bull; <strong>Kiến trúc &amp; Hiệu năng:</strong> Tái cấu trúc pipeline FFmpeg decode camera RTSP sang Metal/CoreMedia, loại bỏ hoàn toàn memory leaks, ổn định 60fps trên iPhone đời cũ.<br>
+                    &bull; <strong>Đồng bộ IoT:</strong> Xử lý đồng thời 10+ giao thức (MQTTs, BLE, Zigbee, TCP Socket) bằng Reactive MVVM (RxSwift/Combine).<br>
+                    &bull; <strong>Bằng chứng:</strong> Link App Store chính thức, sơ đồ luồng dữ liệu, báo cáo benchmark bộ nhớ Instruments.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: Personal Project -->
+              <div>
+                <h4 style="font-size: 14px; text-transform: uppercase; color: #60a5fa; margin-bottom: 8px;">3. Đóng gói sản phẩm AI (Lớp 3 - Portfolio 90 ngày)</h4>
+                <div class="critique-box success">
+                  <span>✅</span>
+                  <div>
+                    <strong>Sản phẩm mở ra được kèm số đo thực tế:</strong><br>
+                    &bull; <strong>VN Lottery Analytics:</strong> 5,000+ người dùng, rating 4.6★ trên Google Play, tích hợp thuật toán phân tích chuỗi xác suất.<br>
+                    &bull; <strong>MollterT Todo:</strong> Tích hợp bộ xử lý NLP cục bộ phân loại mức độ ưu tiên công việc theo ma trận Eisenhower. Kèm live GitHub repo &amp; APK tải ngay.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4: AI Literacy -->
+              <div>
+                <h4 style="font-size: 14px; text-transform: uppercase; color: #60a5fa; margin-bottom: 8px;">4. Năng lực Cầm lái AI &amp; Trách nhiệm kiểm chứng</h4>
+                <div class="critique-box success">
+                  <span>✅</span>
+                  <div>
+                    <strong>Thực hành đúng nguyên tắc Slide 42 &amp; 44:</strong><br>
+                    &bull; Sử dụng Coding Agent để sinh mock packet socket &amp; tự động tạo 150+ ca kiểm thử XCTest.<br>
+                    &bull; <em>"Không merge dòng code nào chưa đọc hiểu"</em>: Tự mình thẩm định 100% logic thuật toán, chịu trách nhiệm hoàn toàn về độ an toàn và bảo mật hệ thống.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SHOWCASE DỰ ÁN THỰC CHIẾN (PROOF OF WORK) -->
+    <section id="duAnThucChien" class="section" style="background: var(--bg-subtle);">
+      <div class="container">
+        <span class="section-tag">Bằng chứng có thể kiểm chứng · Slide 73 &middot; Lớp 2 &middot; Sản phẩm nghề</span>
+        <h2 class="section-title">Showcase Dự Án Thực Chiến: Bằng Chứng Mở Được</h2>
+        <p class="section-desc">
+          Mỗi dự án đều có số liệu kiểm chứng, sơ đồ luồng dữ liệu, và dấu ấn sử dụng công cụ AI (AI Footprint).
+        </p>
+
+        <!-- Filter Buttons -->
+        <div style="display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;">
+          <button class="btn btn-sm btn-secondary filter-btn active" data-filter="all">Tất Cả Dự Án</button>
+          <button class="btn btn-sm btn-secondary filter-btn" data-filter="iot">IoT &amp; Phần Cứng</button>
+          <button class="btn btn-sm btn-secondary filter-btn" data-filter="stream">Live Streaming &amp; Video</button>
+          <button class="btn btn-sm btn-secondary filter-btn" data-filter="ai">AI Tooling &amp; Cá Nhân</button>
+        </div>
+
+        <!-- Project 1: ONEHome -->
+        <div class="project-card" data-category="iot">
+          <div class="project-badge-top">
+            <div>
+              <div class="project-title">
+                <span>ONEHome — Hệ Sinh Thái Nhà Thông Minh</span>
+                <span class="badge-tag highlight">Dự Án Doanh Nghiệp Trọng Điểm</span>
+              </div>
+              <div class="company-name">VNPT Technology &middot; Khách hàng: End-user toàn quốc &middot; Quy mô: 60 thành viên</div>
+            </div>
+            <a href="https://apps.apple.com/vn/app/one-home/id1523250706" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+              Mở Trên App Store &nearr;
+            </a>
+          </div>
+
+          <p style="color: var(--text-muted); font-size: 14px;">
+            Ứng dụng trung tâm giám sát và điều khiển tự động toàn bộ thiết bị nhà thông minh VNPT: Camera an ninh giám sát AI, Gateway Wifi ONT/Mesh, Smart Plug, Công tắc, Chiếu sáng, Bộ phát hồng ngoại IR Blaster, Rèm cửa tự động và Khóa cửa thông minh Zigbee.
+          </p>
+
+          <div class="tech-tag-list">
+            <span class="tech-tag iot">Swift</span>
+            <span class="tech-tag iot">Objective-C</span>
+            <span class="tech-tag iot">RTSP / FFmpeg</span>
+            <span class="tech-tag iot">MQTTs &amp; Socket</span>
+            <span class="tech-tag iot">BLE &amp; Zigbee</span>
+            <span class="tech-tag iot">CoreMedia / Metal</span>
+            <span class="tech-tag iot">RxSwift &amp; MVVM</span>
+            <span class="tech-tag iot">Jenkins CI/CD</span>
+            <span class="tech-tag ai">AI Agent Unit Testing</span>
+          </div>
+
+          <!-- Sơ đồ kiến trúc -->
+          <div class="architecture-box">
+            <div style="color: #60a5fa; margin-bottom: 6px; font-weight: bold;">SƠ ĐỒ KIẾN TRÚC KẾT NỐI ĐA THIẾT BỊ (ONEHome Architecture):</div>
+            <div class="arch-diagram">
+              <div class="arch-node">
+                <strong>Thiết Bị Phần Cứng</strong>
+                <span>Camera RTSP &middot; Mesh ONT &middot; Zigbee Lock</span>
+              </div>
+              <div class="arch-arrow">&harr;</div>
+              <div class="arch-node">
+                <strong>Giao Thức Mạng</strong>
+                <span>MQTTs &middot; UDP/TCP Socket &middot; BLE 5.0</span>
+              </div>
+              <div class="arch-arrow">&rarr;</div>
+              <div class="arch-node highlight">
+                <strong>iOS App Core (Thiêm)</strong>
+                <span>Packet Parser &middot; FFmpeg Decode &middot; MVVM State</span>
+              </div>
+              <div class="arch-arrow">&rarr;</div>
+              <div class="arch-node">
+                <strong>UI Hiển Thị</strong>
+                <span>CoreMedia 60fps &middot; Metal View</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chỉ số đo lường -->
+          <div class="metric-grid">
+            <div class="metric-box">
+              <div class="metric-value">-35%</div>
+              <div class="metric-sub">Độ trễ truyền phát luồng Camera RTSP</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value">-45%</div>
+              <div class="metric-sub">Mức tiêu hao bộ nhớ (Khắc phục Memory Leaks)</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value">1.1 Giây</div>
+              <div class="metric-sub">Thời gian quét &amp; bắt cặp thiết bị BLE (trước: 3.4s)</div>
+            </div>
+          </div>
+
+          <!-- AI Footprint (Slide 74) -->
+          <div class="ai-footprint-box">
+            <div class="ai-footprint-title">
+              <span>🤖</span> DẤU ẤN CẦM LÁI AI (AI Footprint — Chuẩn Slide 74)
+            </div>
+            <div class="ai-footprint-grid">
+              <div class="ai-footprint-item">
+                <strong>1. AI Dùng Ở Đâu:</strong>
+                <p>Dùng Coding Agent hỗ trợ viết Mock Packet Generator sinh dữ liệu kiểm thử giả lập cho 10+ loại cảm biến IoT; tự động chuyển đổi header C-struct sang Swift model.</p>
+              </div>
+              <div class="ai-footprint-item">
+                <strong>2. Kiểm Chứng Bằng Gì:</strong>
+                <p>3 lớp kiểm chứng: (1) 150+ ca kiểm thử XCTest biên; (2) Xcode Instruments Leaks &amp; Profiler đo runtime; (3) Kiểm thử tương tác trực tiếp với thiết bị phần cứng thật tại lab VNPT.</p>
+              </div>
+              <div class="ai-footprint-item">
+                <strong>3. Ai Chịu Trách Nhiệm:</strong>
+                <p>Nguyễn Cao Thiêm trực tiếp rà soát từng dòng diff, ký commit và chịu trách nhiệm ổn định phiên bản trước khi release lên Apple App Store.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: EVERY Live -->
+        <div class="project-card" data-category="stream">
+          <div class="project-badge-top">
+            <div>
+              <div class="project-title">
+                <span>EVERY Live — Ứng Dụng Live Streaming Nhật Bản</span>
+                <span class="badge-tag" style="background: rgba(244, 63, 94, 0.15); color: #fb7185;">Thị Trường Quốc Tế</span>
+              </div>
+              <div class="company-name">Teneocto Technology &middot; Khách hàng: Doanh nghiệp Nhật Bản &middot; Team: 6 Mobile Devs</div>
+            </div>
+            <a href="https://everylive.jp/" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+              Trang Chủ Dự Án &nearr;
+            </a>
+          </div>
+
+          <p style="color: var(--text-muted); font-size: 14px;">
+            Nền tảng phát sóng trực tiếp (Live streaming) quy mô lớn tại Nhật Bản kết nối idol và khán giả theo thời gian thực. Hệ thống xử lý hàng trăm nghìn bình luận, hiệu ứng quà tặng động (gift animation) và cuộc gọi song song giữa các phòng phát.
+          </p>
+
+          <div class="tech-tag-list">
+            <span class="tech-tag stream">Swift &amp; UIKit</span>
+            <span class="tech-tag stream">Agora RTC SDK</span>
+            <span class="tech-tag stream">WebRTC Low Latency</span>
+            <span class="tech-tag stream">CoreAnimation 60fps</span>
+            <span class="tech-tag stream">Combine &amp; RxSwift</span>
+            <span class="tech-tag stream">Realm / Keychain</span>
+          </div>
+
+          <div class="metric-grid">
+            <div class="metric-box">
+              <div class="metric-value">&lt;250ms</div>
+              <div class="metric-sub">Độ trễ truyền hình trực tiếp Realtime WebRTC</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value">60 FPS</div>
+              <div class="metric-sub">Khung hình hiển thị hiệu ứng quà tặng (CoreAnimation)</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-value">&lt;0.05%</div>
+              <div class="metric-sub">Tỷ lệ Crash Rate đo lường qua Firebase Crashlytics</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 & 4: Personal Projects & AI Tooling -->
+        <div class="project-card" data-category="ai">
+          <div class="project-badge-top">
+            <div>
+              <div class="project-title">
+                <span>Bộ Công Cụ Di Động &amp; Dự Án Độc Lập</span>
+                <span class="badge-tag gold">Lớp 3 Portfolio 90 Ngày</span>
+              </div>
+              <div class="company-name">Phát triển độc lập &middot; Phát hành công khai trên Google Play Store</div>
+            </div>
+            <div style="display: flex; gap: 8px;">
+              <span class="badge-tag">5,000+ Downloads</span>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 14px;">
+            <div style="background: var(--bg-subtle); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+              <strong style="color: #60a5fa; font-size: 15px;">1. VN Lottery — Phân Tích Xác Suất Vietlott</strong>
+              <p style="font-size: 13px; color: var(--text-muted); margin: 6px 0;">
+                Ứng dụng tra cứu và phân tích thống kê chuỗi xuất hiện số xổ số điện toán. Xây dựng bằng Flutter, tích hợp mô hình phân tích dữ liệu xác suất và thuật toán cache ngoại tuyến.
+              </p>
+              <div style="font-size: 12px; color: #34d399;">&bull; 5,000+ lượt tải &middot; 4.6★ trên Google Play</div>
+            </div>
+
+            <div style="background: var(--bg-subtle); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+              <strong style="color: #60a5fa; font-size: 15px;">2. MollterT — Quản Lý Công Việc Thông Minh</strong>
+              <p style="font-size: 13px; color: var(--text-muted); margin: 6px 0;">
+                Ứng dụng Todo List ứng dụng thuật toán phân loại mức độ ưu tiên theo ma trận Eisenhower; tích hợp bộ xử lý NLP cục bộ (Local Natural Language Processing) để phân loại tag tự động không cần kết nối mạng.
+              </p>
+              <div style="font-size: 12px; color: #60a5fa;">&bull; Clean Architecture &middot; Tối ưu pin &amp; RAM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: MINH HOẠ BÀI GIẢNG "CẦM LÁI AI" (TLU CASE STUDY HUB) -->
+    <section id="caseStudyAi" class="section">
+      <div class="container">
+        <span class="section-tag">Case Study Giảng Dạy Đại Học Thủy Lợi · CAM_LAI_AI_Tai_lieu_sinh_vien_v2.pptx</span>
+        <h2 class="section-title">Học Gì Từ Case Study Anh Nguyễn Cao Thiêm?</h2>
+        <p class="section-desc">
+          Bốn bài học trực tiếp từ hành trình của anh Thiêm (TLU K60) giúp 173 bạn sinh viên tự tin "Cầm lái AI" thay vì lo sợ bị AI thay thế.
+        </p>
+
+        <!-- 4 Bài học theo Slide -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px; margin-bottom: 40px;">
+          <!-- Bài học 1: Slide 12 -->
+          <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 22px;">
+            <div style="font-size: 12px; font-weight: 700; color: #ef4444; margin-bottom: 6px;">SLIDE 12 &middot; NGHỀ LẬP TRÌNH</div>
+            <h3 style="font-size: 17px; margin-bottom: 10px;">Cửa Vào Nghề Hẹp Lại &amp; Giá Trị Tăng Thêm</h3>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.5;">
+              AI làm rất nhanh code mẫu, CRUD và sửa lỗi lặp lại. Nhưng AI <strong>không thể thay thế anh Thiêm trong việc thiết kế kiến trúc kết nối camera RTSP, xử lý đồng bộ đa thiết bị IoT và tối ưu bộ nhớ vật lý</strong>. Muốn có chỗ đứng, phải đi sâu vào kiến trúc và kiểm chứng!
+            </p>
+          </div>
+
+          <!-- Bài học 2: Slide 19 -->
+          <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 22px;">
+            <div style="font-size: 12px; font-weight: 700; color: #3b82f6; margin-bottom: 6px;">SLIDE 19 &middot; KỸ NĂNG BẮT BUỘC</div>
+            <h3 style="font-size: 17px; margin-bottom: 10px;">Ngoại Ngữ &middot; Git &middot; Năng Lực AI</h3>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.5;">
+              Ba điều kiện mặc định khi tuyển dụng. Anh Thiêm chứng minh năng lực AI bằng cách: <strong>dùng AI sinh 150+ ca kiểm thử tự động, rút ngắn 60% thời gian hồi quy</strong>, chứ không chỉ ghi chung chung "tôi biết dùng ChatGPT".
+            </p>
+          </div>
+
+          <!-- Bài học 3: Slide 73 -->
+          <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 22px;">
+            <div style="font-size: 12px; font-weight: 700; color: #10b981; margin-bottom: 6px;">SLIDE 73 &middot; PORTFOLIO 90 NGÀY</div>
+            <h3 style="font-size: 17px; margin-bottom: 10px;">Ba Lớp Sản Phẩm Của Kỹ Sư</h3>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.5;">
+              &bull; <strong>Lớp 1 (Học tập):</strong> Đồ án tốt nghiệp Xuất sắc 3.63 tại TLU.<br>
+              &bull; <strong>Lớp 2 (Nghề nghiệp):</strong> Hệ sinh thái ONEHome VNPT &amp; EVERY Live.<br>
+              &bull; <strong>Lớp 3 (Sản phẩm AI):</strong> Bộ công cụ di động và Web Portfolio có kiểm chứng mở ra được.
+            </p>
+          </div>
+
+          <!-- Bài học 4: Slide 76 -->
+          <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 22px;">
+            <div style="font-size: 12px; font-weight: 700; color: #a855f7; margin-bottom: 6px;">SLIDE 76 &middot; 4 KỸ NĂNG GIỮ CHẮC</div>
+            <h3 style="font-size: 17px; margin-bottom: 10px;">Con Người Giữ Quyền Phán Quyết</h3>
+            <p style="font-size: 13px; color: var(--text-muted); line-height: 1.5;">
+              (1) Đặt đề bài đúng cho AI &middot; (2) Tự kiểm chứng &amp; chịu trách nhiệm mã nguồn &middot; (3) Giao tiếp, phối hợp team 60 người &middot; (4) Thiết kế quy trình tự động hoá kiểm thử.
+            </p>
+          </div>
+        </div>
+
+        <!-- Lộ trình 90 ngày cho sinh viên TLU -->
+        <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px;">
+          <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 6px;">Lộ Trình Portfolio 90 Ngày — Không Cần Xin Phép (Slide 73 &amp; 75)</h3>
+          <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 20px;">
+            Sinh viên TLU từ năm 1, năm 2 hoàn toàn có thể bắt đầu xây dựng bằng chứng sống động ngay từ tuần này:
+          </p>
+
+          <div class="roadmap-container">
+            <div class="roadmap-card">
+              <span class="roadmap-badge badge-layer1">NGÀY 1 &ndash; 30 &middot; LỚP 1</span>
+              <h4 style="font-size: 16px; margin-bottom: 8px;">Trong Môn Học (Bài Tập Có Chú Thích AI)</h4>
+              <p style="font-size: 13px; color: var(--text-muted);">
+                Chọn 1 môn lập trình đang học. Khi làm bài tập lớn, ghi chú rõ: Câu lệnh giao cho AI là gì, code sinh ra được kiểm chứng bằng test case nào, chỗ nào AI làm sai và bạn đã tự sửa. Đưa lên GitHub!
+              </p>
+            </div>
+
+            <div class="roadmap-card">
+              <span class="roadmap-badge badge-layer2">NGÀY 31 &ndash; 60 &middot; LỚP 2</span>
+              <h4 style="font-size: 16px; margin-bottom: 8px;">Ngoài Môn Học (Giải Một Việc Thật)</h4>
+              <p style="font-size: 13px; color: var(--text-muted);">
+                Tự động hoá một tác vụ lặp lại: một script cào dữ liệu tuyển dụng, một app nhỏ như TodoList thông minh của anh Thiêm, hoặc một dashboard phân tích điểm. Có sản phẩm chạy được mở ra cho người khác xem.
+              </p>
+            </div>
+
+            <div class="roadmap-card">
+              <span class="roadmap-badge badge-layer3">NGÀY 61 &ndash; 90 &middot; LỚP 3</span>
+              <h4 style="font-size: 16px; margin-bottom: 8px;">Công Khai (Web Portfolio &amp; Số Đo)</h4>
+              <p style="font-size: 13px; color: var(--text-muted);">
+                Đóng gói thành trang Portfolio cá nhân trên Web giống như trang bạn đang xem: Có link code, sơ đồ tư duy, bảng số đo trước-sau và video demo 60 giây. Nhà tuyển dụng sẽ mở link thay vì đọc lời hứa!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: MÔ PHỎNG AGENT TRONG IDE (MINH HOẠ SLIDE 44-45) -->
+    <section id="ideSimulator" class="section" style="background: var(--bg-subtle);">
+      <div class="container">
+        <span class="section-tag">Thực hành tương tác · Slide 44 &middot; Agent trong IDE</span>
+        <h2 class="section-title">Mô Phỏng Review Code Do AI Sinh: 3 Câu Hỏi Trước Khi Merge</h2>
+        <p class="section-desc">
+          Tình huống thực tế tại dự án ONEHome: Coding Agent đề xuất sửa hàm xử lý bộ đệm video RTSP. Hãy thực hành quy trình của Slide 44 để bảo đảm an toàn hệ thống!
+        </p>
+
+        <div class="diff-simulator">
+          <div class="diff-toolbar">
+            <div class="diff-file-tab">
+              <span>📄</span>
+              <strong>RTSPStreamBufferManager.swift</strong>
+              <span style="color: #64748b;">(Diff đề xuất bởi Coding Agent)</span>
+            </div>
+            <span class="badge-tag highlight" style="font-size: 11px;">Mô hình Git Diff</span>
+          </div>
+
+          <div class="diff-content">
+            <div class="diff-line ctx">
+              <span class="diff-num">41</span>
+              <span>func processIncomingVideoPacket(_ packet: Data) throws {</span>
+            </div>
+            <div class="diff-line rem">
+              <span class="diff-num">42</span>
+              <span>-   videoBuffer.append(packet) // LỖI CŨ: Không giới hạn kích thước buffer &rarr; Tràn RAM khi mạng chậm</span>
+            </div>
+            <div class="diff-line add">
+              <span class="diff-num">42</span>
+              <span>+   guard videoBuffer.count + packet.count &lt;= maxBufferSize else {</span>
+            </div>
+            <div class="diff-line add">
+              <span class="diff-num">43</span>
+              <span>+       dropOldestFrameAndLogWarning() // AI sửa: Giảm frame cũ để tránh tràn bộ nhớ</span>
+            </div>
+            <div class="diff-line add">
+              <span class="diff-num">44</span>
+              <span>+       return</span>
+            </div>
+            <div class="diff-line add">
+              <span class="diff-num">45</span>
+              <span>+   }</span>
+            </div>
+            <div class="diff-line add">
+              <span class="diff-num">46</span>
+              <span>+   videoBuffer.append(packet)</span>
+            </div>
+            <div class="diff-line ctx">
+              <span class="diff-num">47</span>
+              <span>    renderFrameWithMetalPipeline()</span>
+            </div>
+            <div class="diff-line ctx">
+              <span class="diff-num">48</span>
+              <span>}</span>
+            </div>
+          </div>
+
+          <!-- Actions & Checklist Bar -->
+          <div class="diff-actions-bar">
+            <div class="three-questions-checklist">
+              <strong style="color: #60a5fa; margin-bottom: 2px;">Slide 44 · Ba câu hỏi bắt buộc phải trả lời được:</strong>
+              <label class="chk-item">
+                <input type="checkbox" id="chk1">
+                <span>1. Tệp này có nằm trong phạm vi đã giao cho Agent? (Đúng, module xử lý RTSP buffer)</span>
+              </label>
+              <label class="chk-item">
+                <input type="checkbox" id="chk2">
+                <span>2. Có dòng nào không giải thích được? (Đã đọc hiểu cơ chế dropOldestFrame)</span>
+              </label>
+              <label class="chk-item">
+                <input type="checkbox" id="chk3">
+                <span>3. Test nào chứng minh thay đổi này đúng? (Có test ca tràn buffer vượt maxBufferSize)</span>
+              </label>
+            </div>
+
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <button id="btnRejectDiff" class="btn btn-secondary">Từ Chối (Revert)</button>
+              <button id="btnAcceptDiff" class="btn btn-primary">Chấp Nhận Diff (Merge)</button>
+            </div>
+          </div>
+
+          <div id="diffResultBox" style="padding: 16px 20px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: TRÌNH GIẢ LẬP BỘ LỌC ATS & TUYỂN DỤNG -->
+    <section id="atsSimulator" class="section">
+      <div class="container">
+        <span class="section-tag">Công cụ tương tác tuyển dụng · Slide 74</span>
+        <h2 class="section-title">Giả Lập Nhà Tuyển Dụng &amp; Bộ Lọc ATS Thời AI</h2>
+        <p class="section-desc">
+          Xem cách hệ thống tuyển dụng hiện đại quét và đánh giá bản CV truyền thống so với bản CV nâng cấp "Cầm lái AI".
+        </p>
+
+        <div class="ats-scanner-box">
+          <div class="ats-score-meter">
+            <div id="atsScoreCircle" class="score-circle">
+              <div id="atsScoreVal" class="score-val" style="color: #60a5fa;">96</div>
+              <div class="score-sub">Điểm ATS</div>
+            </div>
+
+            <div>
+              <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 6px;">Trạng Thái Đánh Giá Hồ Sơ</h3>
+              <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 12px;">
+                Nhà tuyển dụng công nghệ lớn hiện nay dùng AI quét sơ tuyển CV trong vòng 6 giây đầu tiên, kiểm tra các từ khóa có số đo trước-sau và liên kết sản phẩm thực tế.
+              </p>
+              <div style="display: flex; gap: 10px;">
+                <button id="scanOldCv" class="btn btn-secondary btn-sm">Quét Thử CV Cũ (PDF 2021)</button>
+                <button id="scanNewCv" class="btn btn-primary btn-sm">Quét Thử CV Mới (Web 2026)</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="atsFeedback">
+            <div style="background: rgba(16, 185, 129, 0.1); border-left: 4px solid #10b981; padding: 12px; border-radius: 6px; font-size: 13px;">
+              <strong style="color: #10b981;">✅ Đánh giá ATS &amp; Tech Lead: 96/100 (Ưu tiên phỏng vấn trực tiếp!)</strong>
+              <ul style="margin: 8px 0 0 18px; color: var(--text-muted);">
+                <li><strong>Dòng mở đầu ấn tượng:</strong> Số đo giảm 35% RTSP latency và tăng 65% coverage tạo ấn tượng ngay 6 giây đầu.</li>
+                <li><strong>Bằng chứng kiểm chứng 3 lớp:</strong> Có link live, sơ đồ kiến trúc IoT &amp; Stream, minh chứng chịu trách nhiệm (Slide 74 &amp; 76).</li>
+                <li><strong>Năng lực Cầm lái AI:</strong> Nêu rõ AI dùng ở đâu (Gen Mock Data, Unit Test), kiểm thế nào, tiết kiệm 60% thời gian (Slide 19).</li>
+                <li><strong>Hồ sơ bảo chứng:</strong> Tốt nghiệp Xuất sắc TLU (3.63), ThS VNU-UET, PM/Lead VNPT tham chiếu.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div style="font-weight: 700; font-size: 15px; color: var(--text-main); margin-bottom: 4px;">
+          Nguyễn Cao Thiêm &middot; Web Portfolio &amp; Case Study "Cầm Lái AI"
+        </div>
+        <div>
+          Cựu sinh viên Tốt nghiệp Xuất sắc Trường Đại học Thủy Lợi (TLU K60) &middot; Thạc sĩ KTPM VNU-UET
+        </div>
+        <div style="margin-top: 6px;">
+          Sản phẩm đồng hành cùng bài giảng <em>CAM_LAI_AI_Tai_lieu_sinh_vien_v2.pptx</em> phục vụ học phần VNU1001.
+        </div>
+      </div>
+
+      <div style="text-align: right;">
+        <div style="font-size: 13px; color: var(--text-muted);">Thông tin liên hệ đã được ẩn trong bản công khai.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

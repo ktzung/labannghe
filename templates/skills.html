@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}Bảng kỹ năng — La Bàn Nghề{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="eyebrow-line"></span> Bảng kỹ năng</div>
+    <h1>Kỹ năng nào đang được <span class="accent">trả tiền?</span></h1>
+    <p class="lede narrow">Đếm trên tin tuyển dụng thật, so với kỳ trước cùng độ dài. Kỹ năng thao tác và kiến thức nền được tách riêng; chỉ câu yêu cầu, thẻ kỹ năng hoặc mô tả công việc mới được tính, không tính tên ngành trong phần giới thiệu sản phẩm hay công ty.</p>
+  </div>
+</section>
+
+<section class="wrap controls-bar">
+  <div class="segmented" id="scope-toggle" role="group" aria-label="Phạm vi dữ liệu">
+    <button type="button" data-value="vn" class="active">Việt Nam</button>
+    <button type="button" data-value="global">Toàn cầu</button>
+  </div>
+  <label class="field-inline">
+    <span>Thời gian</span>
+    <select id="days-select">
+      <option value="7">7 ngày</option>
+      <option value="30" selected>30 ngày</option>
+      <option value="90">90 ngày</option>
+    </select>
+  </label>
+  <label class="field-inline grow">
+    <span>Tìm kỹ năng</span>
+    <input id="skill-search" type="search" placeholder="Ví dụ: SQL, Power BI, tiếng Anh…" autocomplete="off">
+  </label>
+  <label class="field-inline">
+    <span>Vị trí</span>
+    <select id="role-filter"><option value="all">Tất cả vị trí</option></select>
+  </label>
+  <span class="control-note" id="skills-count"></span>
+</section>
+
+<section class="wrap">
+  <article class="panel table-panel">
+    <div class="table-wrap">
+      <table class="data-table" id="skills-table">
+        <thead>
+          <tr>
+            <th>Kỹ năng</th>
+            <th>Nhóm</th>
+            <th class="num">Tin</th>
+            <th class="num">Tỷ lệ</th>
+            <th class="num">So kỳ trước</th>
+            <th class="num">Lương trung vị</th>
+            <th class="num">So lương chung</th>
+          </tr>
+        </thead>
+        <tbody id="skills-body">
+          <tr><td colspan="7"><div class="skeleton"></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel-foot split">
+      <span class="tiny-note">“So kỳ trước” là chênh lệch tỷ lệ xuất hiện so với một khoảng thời gian dài bằng khoảng đang chọn, ngay trước đó.</span>
+      <span class="tiny-note">Lương chỉ tính tin Việt Nam có công bố mức lương.</span>
+    </div>
+  </article>
+</section>
+
+<section class="wrap">
+  <article class="panel table-panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow"><span class="eyebrow-line"></span> Kiến thức nền</div>
+        <h2>Ngành học và lĩnh vực chuyên môn được yêu cầu</h2>
+      </div>
+      <span class="panel-note" id="knowledge-count"></span>
+    </div>
+    <div class="table-wrap">
+      <table class="data-table" id="knowledge-table">
+        <thead>
+          <tr>
+            <th>Kiến thức</th>
+            <th>Nhóm</th>
+            <th class="num">Tin</th>
+            <th class="num">Tỷ lệ</th>
+            <th class="num">Lương trung vị</th>
+            <th class="num">So lương chung</th>
+          </tr>
+        </thead>
+        <tbody id="knowledge-body">
+          <tr><td colspan="6"><div class="skeleton"></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel-foot split">
+      <span class="tiny-note">Bằng cấp, chuyên ngành, lĩnh vực kỹ thuật được tách khỏi kỹ năng thao tác. Một tin có thể vừa yêu cầu kiến thức nền vừa yêu cầu kỹ năng cụ thể.</span>
+      <span class="tiny-note">Không tính tên ngành trong mô tả sản phẩm hoặc giới thiệu công ty.</span>
+    </div>
+  </article>
+</section>
+
+<section class="wrap">
+  <div class="info-strip">
+    <div>
+      <div class="eyebrow">Cách đọc</div>
+      <p><strong>Tỷ lệ</strong> là phần trăm tin trong phạm vi có nhắc tới kỹ năng. <strong>Lương trung vị</strong> là trung vị của điểm giữa khoảng lương, không phải mức khởi điểm. <strong>So lương chung</strong> so với trung vị toàn bộ tin có lương, chỉ để tham khảo.</p>
+    </div>
+    <a class="btn btn-ghost" href="/nguon">Xem phương pháp</a>
+  </div>
+</section>
+{% endblock %}

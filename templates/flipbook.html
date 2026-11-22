@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Sách lật — La Bàn Nghề{% endblock %}
+{% block content %}
+<section class="wrap page-toolbar no-print">
+  <div>
+    <div class="eyebrow"><span class="eyebrow-line"></span> Đọc dạng sách lật</div>
+    <h1 class="small-title">Lật từng trang thị trường</h1>
+  </div>
+  <div class="toolbar-actions">
+    <div class="segmented" id="scope-toggle">
+      <button type="button" data-value="vn" class="active">Việt Nam</button>
+      <button type="button" data-value="global">Toàn cầu</button>
+    </div>
+    <select id="days-select" class="plain-select">
+      <option value="30" selected>30 ngày</option>
+      <option value="90">90 ngày</option>
+      <option value="7">7 ngày</option>
+    </select>
+    <a class="btn btn-ghost" href="/bao-cao">Bản in PDF</a>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="fb-stage">
+    <div class="fb-book" id="fb-book">
+      <article class="fb-page" id="fb-page" aria-live="polite" aria-label="Trang sách lật">
+        <div class="skeleton card"></div>
+      </article>
+    </div>
+    <div class="fb-controls no-print">
+      <button class="fb-nav-btn" id="fb-prev" type="button" aria-label="Trang trước">←</button>
+      <div class="fb-progress" id="fb-dots" role="group" aria-label="Chọn trang"></div>
+      <span class="fb-counter" id="fb-counter">Trang 1</span>
+      <button class="fb-nav-btn" id="fb-next" type="button" aria-label="Trang sau">→</button>
+    </div>
+    <p class="fb-hint no-print">Dùng phím ← → hoặc vuốt ngang để lật trang. Đổi phạm vi hoặc số ngày ở phía trên để dựng lại cuốn sách.</p>
+  </div>
+</section>
+{% endblock %}
