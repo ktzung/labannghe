@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="La Bàn Nghề — nền tảng phân tích xu hướng tuyển dụng và kỹ năng cho sinh viên, đồng hành cùng buổi Cầm lái AI.">
+  <title>Nguồn &amp; phương pháp — La Bàn Nghề</title>
+  <link rel="icon" href="/labannghe/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/labannghe/static/app.css?v=20261121f">
+</head>
+<body data-page="sources">
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="/labannghe/" aria-label="La Bàn Nghề — trang chủ">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="34" height="34">
+            <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M20 7 L24 20 L20 33 L16 20 Z" fill="currentColor" opacity=".18"/>
+            <path d="M20 7 L24 20 L20 28 L16 20 Z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="20" cy="20" r="2.4" fill="#B42318"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>La Bàn Nghề</strong>
+          <small>Dữ liệu tuyển dụng cho sinh viên</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="/labannghe/" class="">Tổng quan</a>
+        <a href="/labannghe/ky-nang" class="">Kỹ năng</a>
+        <a href="/labannghe/vi-tri" class="">Vị trí</a>
+        <a href="/labannghe/cntt" class="">CNTT</a>
+        <a href="/labannghe/tin-hieu-cong-dong" class="">Cộng đồng</a>
+        <a href="/labannghe/nguon" class="active">Nguồn &amp; phương pháp</a>
+        <a href="/labannghe/bao-cao" class="">Báo cáo</a>
+        <a href="/labannghe/sach-lat" class="">Sách lật</a>
+        <a href="/labannghe/case-study-cv" class="">Case Study CV (TLU)</a>
+      </nav>
+      <div class="topbar-flag">
+        <span class="pulse" aria-hidden="true"></span>
+        <span>Cập nhật hằng ngày</span>
+      </div>
+    </div>
+    <div class="tricolor" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </header>
+
+  <main>
+    
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="eyebrow-line"></span> Nguồn &amp; phương pháp</div>
+    <h1>Minh bạch từ tin gốc <span class="accent">đến con số.</span></h1>
+    <p class="lede narrow">Nền tảng chỉ đọc dữ liệu tuyển dụng công khai, giữ liên kết về nguồn, không thu thập thông tin cá nhân và không đăng lại toàn văn tin tuyển dụng.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="source-grid" id="source-cards">
+    <div class="skeleton card"></div><div class="skeleton card"></div><div class="skeleton card"></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Chưa thu thập</div>
+        <h2>TopCV và một số trang tuyển dụng lớn</h2>
+      </div>
+    </div>
+    <p class="muted">Các trang dưới đây bị loại vì chặn truy cập tự động hoặc không có API công khai ổn định. Nền tảng không giả User-Agent và không vượt Cloudflare; danh sách được nêu để minh bạch phạm vi dữ liệu.</p>
+    <ul class="bullet-list" id="unavailable-sources"></ul>
+  </article>
+</section>
+
+<section class="wrap split-7-5">
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Pipeline</div>
+        <h2>Một tin đi qua bốn bước</h2>
+      </div>
+    </div>
+    <ol class="steps">
+      <li><strong>Thu thập.</strong> Gọi API/RSS công khai hoặc đọc trang danh mục được phép. Mỗi nguồn có độ trễ 1,2 giây và tối đa 3 lần thử.</li>
+      <li><strong>Chuẩn hoá.</strong> Đưa về một lược đồ chung: tiêu đề, công ty, địa điểm, lương, ngày đăng, mô tả. Tin trùng giữa các sàn được gộp theo khoá tiêu đề + công ty + địa điểm + tháng.</li>
+      <li><strong>Trích kỹ năng.</strong> So khớp 146 kỹ năng với bộ từ đồng nghĩa Việt/Anh trên thẻ, yêu cầu, mô tả và tiêu đề. Thẻ/mô tả/yêu cầu có trọng số 4; tiêu đề chỉ có 3, nên tiêu đề không thể một mình tạo thành “tiêu chuẩn nghề”. Không dùng mô hình ngôn ngữ, nên kết quả tái lập được.</li>
+      <li><strong>Phân tích.</strong> Đếm theo cửa sổ thời gian, chia cho tổng số tin trong cùng phạm vi, so với kỳ trước; tính trung vị lương và xu hướng tuần.</li>
+    </ol>
+  </article>
+
+  <div class="stack">
+    <article class="panel panel-soft">
+      <div class="panel-head">
+        <div>
+          <div class="eyebrow">Cập nhật</div>
+          <h2>Lịch chạy</h2>
+        </div>
+      </div>
+      <p class="big-time">06:30 <span>mỗi ngày</span></p>
+      <p class="muted">Chạy cục bộ bằng launchd (macOS) hoặc cron. Có thể chạy tay bất cứ lúc nào.</p>
+      <pre class="code">cd labannghe
+python3 -m laban.cli ingest</pre>
+      <p class="tiny-note" id="last-run">Đang tải lần chạy gần nhất…</p>
+    </article>
+    <article class="panel">
+      <div class="panel-head">
+        <div>
+          <div class="eyebrow">Phạm vi</div>
+          <h2>Đang có gì trong kho?</h2>
+        </div>
+      </div>
+      <div id="db-stats" class="db-stats"><div class="skeleton short"></div></div>
+    </article>
+  </div>
+</section>
+
+<section class="wrap">
+  <article class="panel table-panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Nhật ký</div>
+        <h2>Nguồn và lần chạy gần nhất</h2>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="data-table compact">
+        <thead><tr><th>Nguồn</th><th>Vai trò</th><th class="num">Tin đã lấy</th><th class="num">Lỗi</th><th>Lần cuối</th></tr></thead>
+        <tbody id="source-runs"><tr><td colspan="5"><div class="skeleton"></div></td></tr></tbody>
+      </table>
+    </div>
+  </article>
+</section>
+
+<section class="wrap">
+  <article class="panel">
+    <div class="panel-head">
+      <div>
+        <div class="eyebrow">Tín hiệu cộng đồng</div>
+        <h2>RSS công khai, không đọc bình luận</h2>
+      </div>
+      <a class="text-link" href="/labannghe/tin-hieu-cong-dong">Mở dashboard →</a>
+    </div>
+    <p>Bốn chuyên mục của Voz có RSS công khai: <strong>Tuyển dụng - Tìm việc</strong>, <strong>Lập trình / CNTT</strong>, <strong>AI</strong> và <strong>Ngoại ngữ</strong>. Hệ thống chỉ lấy tiêu đề, liên kết, ngày đăng, số phản hồi/lượt xem và đoạn trích tối đa 700 ký tự. Tên tác giả được băm một chiều; không lưu tên, không tải toàn bộ bình luận, không vượt Cloudflare hay đăng nhập.</p>
+    <ul class="bullet-list">
+      <li>RSS chỉ trả tối đa 20 chủ đề mới nhất mỗi chuyên mục, nên dữ liệu là <strong>mẫu đại diện</strong>, không phải toàn bộ lịch sử diễn đàn.</li>
+      <li>Tin tuyển dụng trong chuyên mục được tách khỏi thảo luận bằng quy tắc tiêu đề và đoạn trích; con số “thảo luận” đã loại các tin này.</li>
+      <li>Nhãn chủ đề/vấn đề là tín hiệu ngôn ngữ, có thể bỏ sót hoặc nhầm; mọi chủ đề đều có liên kết về bài gốc để kiểm tra.</li>
+      <li>Chạy tay: <code>python3 -m laban.cli social-ingest --mode auto</code>. Chế độ <code>file</code> chỉ đọc snapshot trong <code>data/voz_rss/</code>.</li>
+    </ul>
+  </article>
+</section>
+
+<section class="wrap split-2">
+  <article class="panel">
+    <div class="eyebrow">Giới hạn cần nói rõ</div>
+    <h2>Đọc số cho đúng</h2>
+    <ul class="bullet-list">
+      <li><strong>Không đại diện toàn bộ thị trường.</strong> Mỗi sàn có tập khách hàng riêng; tin không đăng lương bị loại khỏi thống kê lương.</li>
+      <li><strong>Tin quốc tế chủ yếu là remote.</strong> Đây là mặt bằng “việc từ xa”, không phải toàn bộ thị trường lao động ở nước ngoài.</li>
+      <li><strong>Trích kỹ năng bằng luật.</strong> Có thể bỏ sót cách viết lạ hoặc tính cả kỹ năng được nhắc để phủ định. Vì vậy mọi tin đều có liên kết để kiểm tra lại.</li>
+      <li><strong>Phân loại vị trí theo tiêu đề.</strong> Một số tiêu đề mơ hồ có thể rơi vào nhóm “Khác” hoặc bị xếp nhầm; tỷ lệ này được hiển thị để bạn biết.</li>
+      <li><strong>Lương đã quy đổi chỉ để so sánh.</strong> Tỷ giá tham khảo cố định, không phải tỷ giá giao dịch; lương quốc tế thường là theo năm.</li>
+    </ul>
+  </article>
+  <article class="panel">
+    <div class="eyebrow">Đạo đức &amp; pháp lý</div>
+    <h2>Chúng tôi làm gì, không làm gì</h2>
+    <ul class="bullet-list">
+      <li>Chỉ dùng API/RSS công khai hoặc trang danh mục mà <code>robots.txt</code> cho phép; không vượt qua tường đăng nhập hay chặn kỹ thuật.</li>
+      <li>Tôn trọng giới hạn tần suất, có User-Agent nhận diện và liên hệ.</li>
+      <li>Không thu thập tên, email, số điện thoại của người tuyển dụng hoặc ứng viên.</li>
+      <li>Không đăng lại toàn văn tin; giao diện chỉ hiển thị trích đoạn và luôn có liên kết về tin gốc.</li>
+      <li>Với diễn đàn, chỉ đọc RSS công khai, băm tên tác giả bằng SHA-256 có muối và không lưu bình luận đầy đủ.</li>
+      <li>Dữ liệu thô được lưu tối đa 21 ngày để kiểm tra, sau đó xoá bằng lệnh <code>prune</code>.</li>
+      <li>Điều khoản của từng nguồn được ghi trong mã; khi dùng cho mục đích thương mại cần xem lại giấy phép từng bên.</li>
+    </ul>
+  </article>
+</section>
+
+<section class="wrap">
+  <div class="info-strip">
+    <div>
+      <div class="eyebrow">Tái lập</div>
+      <p>Toàn bộ mã nằm trong thư mục <code>labannghe/</code>. Từ điển kỹ năng ở <code>taxonomy/skills.json</code>, quy tắc vị trí ở <code>taxonomy/roles.json</code>.</p>
+    </div>
+    <a class="btn btn-ghost" href="/labannghe/api/method" target="_blank" rel="noopener">Xem JSON phương pháp</a>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <div class="footer-brand">La Bàn Nghề</div>
+        <p>Sản phẩm đồng hành với buổi tập huấn <em>Cầm lái AI</em> — Phần 6: Hướng đi &amp; việc làm.<br>
+        Dữ liệu công khai, chỉ dùng cho mục đích học tập và hướng nghiệp.</p>
+      </div>
+      <div>
+        <div class="footer-title">Liên kết</div>
+        <a href="/labannghe/cntt">Phân tích CNTT</a>
+        <a href="/labannghe/nguon">Nguồn dữ liệu &amp; đạo đức</a>
+        <a href="/labannghe/sach-lat">Đọc dạng sách lật</a>
+        <a href="/labannghe/bao-cao">Báo cáo cho slide</a>
+        <a href="/labannghe/api-static/8744371f3f56448c.json">Tải JSON</a>
+      </div>
+      <div>
+        <div class="footer-title">Ghi công</div>
+        <p>Dữ liệu thuộc về từng trang tuyển dụng. Mỗi tin đều có liên kết về nguồn gốc.</p>
+        <p class="muted">Không thu thập thông tin cá nhân, không đăng lại toàn văn tin tuyển dụng.</p>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <span>TLU · Tập huấn sinh viên 2026</span>
+      <span>La Bàn Nghề v0.1 · <span id="footer-updated">đang tải…</span></span>
+    </div>
+  </footer>
+
+  <dialog id="drawer" class="drawer" aria-labelledby="drawer-title">
+    <div class="drawer-head">
+      <div>
+        <div class="eyebrow" id="drawer-eyebrow">Chi tiết</div>
+        <h2 id="drawer-title">Đang tải…</h2>
+      </div>
+      <button class="icon-btn" id="drawer-close" aria-label="Đóng">×</button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+  </dialog>
+
+  <script src="/labannghe/static/snapshot.js" defer></script>
+<script src="/labannghe/static/app.js?v=20261121f" defer></script>
+</body>
+</html>
